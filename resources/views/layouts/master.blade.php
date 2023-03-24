@@ -8,16 +8,14 @@
 
         @include('partials.loader')
         <div id="wrapper" class="wrapper clearfix">
-        @include('partials.header')
+            @include('partials.header')
 
-        @yield('content')
+            @yield('content')
 
-        @include('partials.footer')
+            @include('partials.footer')
 
-        <!--Scroll to top-->
-        <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon"><img
-                    src="{{ asset('assets/website') }}/images/icons/arrow-up.svg" alt="" title="Go To Top"></span>
         </div>
+
         @include('partials.script')
 
     </div>
