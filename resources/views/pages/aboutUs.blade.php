@@ -1,3 +1,6 @@
+@extends('layouts.master')
+
+@section('content')
 <!-- Page Title #1
 ============================================= -->
 <section id="page-title" class="page-title">
@@ -228,3 +231,8 @@
 </section>
 <!-- #about2 end -->
 <div class="clearfix mb-150"></div>
+@endsection
+
+
+
+

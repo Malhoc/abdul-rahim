@@ -16,3 +16,53 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('pages.home');
 });
+
+Route::get('/aboutUs', function () {
+    return view('pages.aboutUs');
+});
+
+Route::get('/contactUs', [App\Http\Controllers\ContactUsController::class, 'index'])->name('index');
+
+Route::get('/blogs', function () {
+    return view('pages.blogs');
+});
+
+Route::get('/blog-detail', function () {
+    return view('pages.blog-detail');
+});
+
+
+Route::prefix('videos')->name('videos.')->group(function () {
+    Route::get('/', [App\Http\Controllers\VideoController::class, 'index'])->name('index');
+    Route::get('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
+    Route::get('/{project}', [App\Http\Controllers\VideoController::class, 'show'])->name('show');
+});
+
+//ADMIN PANEL
+
+Route::prefix('admin')->name('admin.')->group(function () {
+
+    Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
+
+    //Videos
+    Route::prefix('videos')->name('videos.')->group(function () {
+        Route::get('/', [App\Http\Controllers\Admin\VideoController::class, 'index'])->name('index');
+        Route::get('/create', [App\Http\Controllers\Admin\VideoController::class, 'create'])->name('create');
+        Route::post('/store', [App\Http\Controllers\Admin\VideoController::class, 'store'])->name('store');
+        // Route::get('/show', [App\Http\Controllers\Admin\VideoController::class, 'show'])->name('show');
+        // Route::get('/edit', [App\Http\Controllers\Admin\VideoController::class, 'edit'])->name('edit');
+        // Route::post('/{id}', [App\Http\Controllers\Admin\VideoController::class, 'update'])->name('update');
+        // Route::delete('/:id}', [App\Http\Controllers\Admin\VideoController::class, 'destroy'])->name('destroy');
+    });
+
+    // Blogs
+    // Route::prefix('blogs')->name('blogs.')->group(function () {
+    //     Route::get('/', [App\Http\Controllers\Admin\BlogController::class, 'index'])->name('index');
+    //         Route::get('/create', [App\Http\Controllers\Admin\BlogController::class, 'create'])->name('create');
+    //         Route::post('/store', [App\Http\Controllers\Admin\BlogController::class, 'store'])->name('store');
+    //         Route::get('/{tour}', [App\Http\Controllers\Admin\BlogController::class, 'show'])->name('show');
+    //         Route::get('/{tour}/edit', [App\Http\Controllers\Admin\BlogController::class, 'edit'])->name('edit');
+    //         Route::put('/{id}', [App\Http\Controllers\Admin\BlogController::class, 'update'])->name('update');
+    //         Route::delete('/{tour:id}', [App\Http\Controllers\Admin\BlogController::class, 'destroy'])->name('destroy');
+    // });
+});

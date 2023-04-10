@@ -10,8 +10,8 @@
 				<span class="icon-bar"></span>
 				</button>
 				<a class="logo" href="index-2.html">
-					<img class="logo-light" src="assets/images/logo/logo-light.png" alt="League Logo">
-					<img class="logo-dark" src="assets/images/logo/logo-dark.png" alt="League Logo">
+					<img class="logo-light" src="{{asset('assets')}}/images/logo/logo-light.png" alt="League Logo">
+					<img class="logo-dark" src="{{asset('assets')}}/images/logo/logo-dark.png" alt="League Logo">
 				</a>
 			</div>
 
@@ -25,7 +25,7 @@
 	</li>
 	<!-- li end -->
 	<!-- Pages Menu -->
-	<li><a href="page-about-us.html">about us</a></li>
+	<li><a href="{{route('videos.index')}}">about us</a></li>
 
 	<!-- li end -->
 	<!-- Features Menu-->
@@ -139,11 +139,11 @@
 					<div class="module-content module-hamburger">
 				 		<div class="hamburger-panel bg-overlay bg-overlay-dark2">
 	<div class="bg-section">
-		<img src="assets/images/background/hamburger.jpg" alt="Background"/>
+		<img src="{{asset('assets')}}/images/background/hamburger.jpg" alt="Background"/>
 	</div>
 <div>
 	<a class="logo" href="index-2.html">
-		<img src="assets/images/logo/logo-light.png" alt="League Logo">
+		<img src="{{asset('assets')}}/images/logo/logo-light.png" alt="League Logo">
 	</a>
 </div>
 	<ul class="list-unstyled list-links">

@@ -15,14 +15,14 @@
 
     <!-- Stylesheets
         ============================================= -->
-    <link href="assets/css/external.css" rel="stylesheet">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{asset('assets')}}/css/external.css" rel="stylesheet">
+    <link href="{{asset('assets')}}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('assets')}}/css/style.css" rel="stylesheet">
 
     <!-- RS5.0 Main Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/revolution/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="assets/revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="assets/revolution/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/revolution/css/navigation.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>

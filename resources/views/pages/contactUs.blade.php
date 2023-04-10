@@ -1,3 +1,6 @@
+@extends('layouts.master')
+
+@section('content')
 <!-- Page Title #1
 ============================================= -->
 <section id="page-title" class="page-title">
@@ -18,7 +21,6 @@
 		</div><!-- .row end -->
 	</div><!-- .container end -->
 </section><!-- #page-title end -->
-
 <!-- Contact #1
 ============================================= -->
 <section id="contact1" class="contact contact-1">
@@ -64,3 +66,7 @@
 	</div>
 </section>
 <!-- #contact1 end -->
+@endsection
+
+
+
