@@ -35,14 +35,14 @@ Route::get('/blog-detail', function () {
 Route::prefix('videos')->name('videos.')->group(function () {
     Route::get('/', [App\Http\Controllers\VideoController::class, 'index'])->name('index');
     Route::get('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
-    Route::get('/{project}', [App\Http\Controllers\VideoController::class, 'show'])->name('show');
+    Route::get('/{video}', [App\Http\Controllers\VideoController::class, 'show'])->name('show');
 });
 
 //ADMIN PANEL
 
 Route::prefix('admin')->name('admin.')->group(function () {
 
-    Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
     //Videos
     Route::prefix('videos')->name('videos.')->group(function () {
@@ -50,7 +50,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/create', [App\Http\Controllers\Admin\VideoController::class, 'create'])->name('create');
         Route::post('/store', [App\Http\Controllers\Admin\VideoController::class, 'store'])->name('store');
         // Route::get('/show', [App\Http\Controllers\Admin\VideoController::class, 'show'])->name('show');
-        // Route::get('/edit', [App\Http\Controllers\Admin\VideoController::class, 'edit'])->name('edit');
+        Route::get('/edit', [App\Http\Controllers\Admin\VideoController::class, 'edit'])->name('edit');
         // Route::post('/{id}', [App\Http\Controllers\Admin\VideoController::class, 'update'])->name('update');
         // Route::delete('/:id}', [App\Http\Controllers\Admin\VideoController::class, 'destroy'])->name('destroy');
     });

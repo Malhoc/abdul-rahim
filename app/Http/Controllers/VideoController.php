@@ -26,7 +26,7 @@ class VideoController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -48,7 +48,8 @@ class VideoController extends Controller
      */
     public function show(Video $video)
     {
-        //
+
+        return view('pages.videos.show', compact('video'));
     }
 
     /**

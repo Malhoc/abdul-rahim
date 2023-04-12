@@ -16,7 +16,7 @@ class VideoController extends Controller
     public function index()
     {
         $videos = Video::all();
-        return view('adminpanel.pages.videos.list',compact('videos'));
+        return view('adminpanel.pages.videos.index',compact('videos'));
     }
 
     /**
@@ -46,6 +46,7 @@ class VideoController extends Controller
             'author_name' => 'string|required',
             'book' => 'string|required',
             'narrated_by' => 'string|required',
+            'video' => 'file|required',
 
         ]);
         $name = null;

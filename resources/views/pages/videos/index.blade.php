@@ -15,7 +15,7 @@
                     <div class="title title-2 text-center">
                         <div class="title--content">
                             <div class="title--heading">
-                                <h1>Blog Grid</h1>
+                                <h1>Islamic Videos</h1>
                             </div>
                             <div class="title--desc">
                                 <p>League is a creative multi-concept WordPress theme perfectly designed to make awesome
@@ -55,9 +55,9 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="blog-entry">
                             <div class="entry--img">
-
-                                <video controls src="{{ asset('storage') }}/videos/mixkit.mp4" width="370px"
-                                    height="248px">
+                                <div style="width:370px; height:255px; box-sizing:border-box;">
+                                    <video  src="{{ asset('storage') }}/{{$video->video}}" >
+                                </div>
 
                             </div>
                             <div class="entry--content">
@@ -78,7 +78,7 @@
                                         Feb 22, 2017
                                     </div>
                                     <div class="entry--more">
-                                        <a href="#"><i class="fa fa-long-arrow-right"></i><span>more</span></a>
+                                        <a href="{{route('videos.show', $video->id)}}"><i class="fa fa-long-arrow-right"></i><span>more</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                     </div>
                 @endforeach
                 <!-- .col-md-4 end -->
-               
+
 
 
             </div><!-- .video--player end -->

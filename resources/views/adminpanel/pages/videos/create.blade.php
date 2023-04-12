@@ -1,107 +1,203 @@
-@extends('adminpanel.layouts.master')
+@extends('adminpanel.layouts.app')
+
+@section('title-meta')
+    <title>{{ config('app.name') }} | video Create</title>
+
+    <meta name="description" content="this is description">
+@endsection
+
+@section('other-css')
+@endsection
 
 @section('content')
-    <div class="content-wrapper">
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Advanced Form</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Home</a></li>
-                            <li class="breadcrumb-item active">Advanced Form</li>
-                        </ol>
-                    </div>
-                    @foreach ($errors->all() as $error)
-                        <p style="color: red;">{{ $error }}</p>
-                    @endforeach
+    <div id="page-wrapper" class="gray-bg">
+
+        <div class="row border-bottom">
+            @include('adminpanel.partials.header')
+        </div>
+
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-sm-4">
+                <h2>User Management</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="{{ route('videos.index') }}">Video</a>
+                    </li>
+                    <li class="active">
+                        <strong>Create</strong>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-sm-8">
+                <div class="title-action">
+                    <a href="{{ route('videos.index') }}" class="btn btn-primary">Show List</a>
                 </div>
-            </div><!-- /.container-fluid -->
-        </section>
-        <section class="content">
-            <div class="container-fluid">
-                <div class="card card-default">
-                    <div class="card-header">
-                        <h3 class="card-title">Select (Your Favourite Video)</h3>
-                        <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                <i class="fas fa-minus"></i>
-                            </button>
-                            <button type="button" class="btn btn-tool" data-card-widget="remove">
-                                <i class="fas fa-times"></i>
-                            </button>
+            </div>
+        </div>
+
+        <div class="wrapper wrapper-content ">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+
+                        <div class="ibox-title">
+                            <h5>Fill out this form to create a new Video.</h5>
+                            {{-- <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-class">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div> --}}
+                        </div>
+
+                        <div class="ibox-content">
+                            <form method="post" class="form-horizontal" action="{{ route('admin.videos.store') }}"
+                                enctype="multipart/form-data">
+                                @csrf
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Title</label>
+
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control @error('name') is-invalid @enderror "
+                                            name="title" value="{{ old('title') }}" required>
+                                        @error('title')
+                                            <span class="invalid-feedback text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+                                    <label class="col-sm-2 control-label">Description</label>
+
+                                    <div class="col-sm-4">
+                                        <input type="text"
+                                            class="form-control @error('description') is-invalid @enderror "
+                                            name="description" value="{{ old('description') }}"required>
+                                        @error('description')
+                                            <span class="invalid-feedback text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Author</label>
+
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control @error('password') is-invalid @enderror"
+                                            name="author_name" value="{{ old('author_name') }}" required>
+                                        @error('author_name')
+                                            <span class="invalid-feedback text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+                                    <label class="col-sm-2 control-label">Book</label>
+
+                                    <div class="col-sm-4">
+                                        <input type="text" value="{{ old('book') }}"
+                                            class="form-control @error('book') is-invalid @enderror" name="book"
+                                            placeholder="Optional" required>
+                                        @error('book')
+                                            <span class="invalid-feedback text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Narrated By</label>
+
+                                    <div class="col-sm-4">
+                                        <input type="text" class="form-control @error('password') is-invalid @enderror"
+                                            name="narrated_by" value="{{ old('narrated_by') }}"
+                                            required>
+                                        @error('narrated_by')
+                                            <span class="invalid-feedback text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+                                    <label class="col-sm-2 control-label">Video</label>
+
+                                    <div class="col-sm-4">
+                                        <input type="file" value="{{ old('video') }}"
+                                            class="form-control @error('book') is-invalid @enderror" name="video"
+                                            placeholder="Upload Video" required>
+                                        @error('video')
+                                            <span class="invalid-feedback text-danger" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                    </div>
+
+
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-primary disabledbutton" id="submitbtn"
+                                            type="submit">Add Video</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                    <!-- /.card-header -->
-                    <form method="POST" action="{{ route('admin.videos.store') }}" enctype="multipart/form-data">
-                        @csrf
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="title">Title</label>
-                                        <input required type="text" name="title" class="form-control" id="title"
-                                            >
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="description">Description</label>
-                                        <input required type="text" name="description" class="form-control" id="description"
-                                            >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="author_name">Author</label>
-                                        <input required type="text" name="author_name" class="form-control" id="author_name"
-                                            >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="book">Book</label>
-                                        <input required type="text" name="book" class="form-control" id="narrated_by"
-                                            >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="narrated_by">Narrated By</label>
-                                        <input required type="text" name="narrated_by" class="form-control"
-                                            id="narrated_by" placeholder="Enter Days">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="video">Upload Video</label>
-                                        <input required type="file" name="video" class="form-control"
-                                            id="video" placeholder="video">
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="card-footer">
-                            <button type="submit" class="btn btn-primary">Add Video</button>
-                        </div>
-                    </form>
                 </div>
             </div>
 
+
+        </div>
+
+        @include('adminpanel.partials.footer')
+
     </div>
+@endsection
+
+
+@section('custom-script')
+    <script>
+        var Success = `{{ \Session::has('success') }}`;
+        var Error = `{{ \Session::has('error') }}`;
+
+        if (Success) {
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 7000
+                };
+                toastr.success('Success Message', `{{ \Session::get('success') }}`);
+            }, 1300);
+        } else if (Error) {
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 4000
+                };
+                toastr.error('Failure Message', `{{ \Session::get('error') }}`);
+            }, 1300);
+        }
+    </script>
 @endsection

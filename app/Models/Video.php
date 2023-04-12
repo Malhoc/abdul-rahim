@@ -27,8 +27,8 @@ class Video extends Model
         'admin_id',
 
     ];
-    public function getRouteKeyName()
-    {
-        return 'slug';
-    }
+    // public function getRouteKeyName()
+    // {
+    //     return 'slug';
+    // }
 }

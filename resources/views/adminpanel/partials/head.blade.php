@@ -1,34 +1,39 @@
 <head>
 
-    <title>AdminLTE 3 | Dashboard</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Google Font: Source Sans Pro -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/fontawesome-free/css/all.min.css">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bootstrap 4 -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/jqvmap/jqvmap.min.css">
+    @yield('title-meta')
 
-    <!-- DataTables -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/css/adminlte.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="{{ asset('adminpanel') }}/plugins/summernote/summernote-bs4.min.css">
+    <link href="{{ asset('adminpanel') }}/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('adminpanel') }}/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="{{ asset('adminpanel') }}/css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="{{ asset('adminpanel') }}/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="{{ asset('adminpanel') }}/js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+    <link
+        href="{{ asset('adminpanel') }}/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css"
+        rel="stylesheet">
+
+    <link href="{{asset('adminpanel')}}/css/plugins/select2/select2.min.css" rel="stylesheet">
+
+
+    <link href="{{ asset('adminpanel') }}/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
+    <!-- Sweet Alert -->
+    <link href="{{ asset('adminpanel') }}/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+
+
+    @yield('other-css')
+
+    <link href="{{ asset('adminpanel') }}/css/animate.css" rel="stylesheet">
+    <link href="{{ asset('adminpanel') }}/css/style.css" rel="stylesheet">
+
 
 </head>
