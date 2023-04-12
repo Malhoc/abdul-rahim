@@ -6,5 +6,5 @@
 </IfModule>
 <IfModule mime_module>
   AddHandler application/x-httpd-ea-php81 .php .php8 .phtml
-  php_value upload_max_filesize 30M
+  <!-- php_value upload_max_filesize 30M -->
 </IfModule>
