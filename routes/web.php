@@ -15,27 +15,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('pages.home');
-});
+})->name('index');
 
-Route::get('/aboutUs', function () {
+Route::get('/about-us', function () {
     return view('pages.aboutUs');
-});
+})->name('about-us');
 
-Route::get('/contactUs', [App\Http\Controllers\ContactUsController::class, 'index'])->name('index');
-
-Route::get('/blogs', function () {
-    return view('pages.blogs');
-});
-
-Route::get('/blog-detail', function () {
-    return view('pages.blog-detail');
-});
-
+Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'index'])->name('contact-us');
 
 Route::prefix('videos')->name('videos.')->group(function () {
     Route::get('/', [App\Http\Controllers\VideoController::class, 'index'])->name('index');
     Route::get('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
     Route::get('/{video}', [App\Http\Controllers\VideoController::class, 'show'])->name('show');
+});
+Route::prefix('blogs')->name('blogs.')->group(function () {
+    Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
+    Route::get('/search', [App\Http\Controllers\BlogController::class, 'search'])->name('search');
+    Route::get('/{video}', [App\Http\Controllers\BlogController::class, 'show'])->name('show');
 });
 
 //ADMIN PANEL

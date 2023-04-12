@@ -18,7 +18,7 @@
                                 <h1>Islamic Videos</h1>
                             </div>
                             <div class="title--desc">
-                                <p>League is a creative multi-concept WordPress theme perfectly designed to make awesome
+                                <p>League is a creative multi-concept theme perfectly designed to make awesome
                                     website for any business. </p>
                             </div>
                         </div>

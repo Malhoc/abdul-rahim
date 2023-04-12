@@ -16,7 +16,7 @@ class BlogController extends Controller
     public function index()
     {
         //$blogs = Blog::all();
-        return view('pages.blogs');
+        return view('pages.blogs.index');
     }
 
     /**
@@ -48,7 +48,7 @@ class BlogController extends Controller
      */
     public function show(Blog $blog)
     {
-        //
+        return view('pages.blogs.show');
     }
 
     /**
