@@ -15,7 +15,7 @@
                     <div class="title title-2 text-center">
                         <div class="title--content">
                             <div class="title--heading">
-                                <h1>Blog Grid</h1>
+                                <h1>Islamic Blogs</h1>
                             </div>
                             <div class="title--desc">
                                 <p>League is a creative multi-concept WordPress theme perfectly designed to make awesome

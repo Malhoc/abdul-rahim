@@ -1,1 +1,0 @@
-academic year view page

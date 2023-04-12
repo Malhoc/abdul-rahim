@@ -51,6 +51,16 @@ Route::prefix('admin')->name('admin.')->group(function () {
         // Route::delete('/:id}', [App\Http\Controllers\Admin\VideoController::class, 'destroy'])->name('destroy');
     });
 
+    Route::prefix('blogs')->name('blogs.')->group(function () {
+        Route::get('/', [App\Http\Controllers\Admin\BlogController::class, 'index'])->name('index');
+        Route::get('/create', [App\Http\Controllers\Admin\BlogController::class, 'create'])->name('create');
+        Route::post('/store', [App\Http\Controllers\Admin\BlogController::class, 'store'])->name('store');
+        // Route::get('/show', [App\Http\Controllers\Admin\BlogController::class, 'show'])->name('show');
+        Route::get('/edit', [App\Http\Controllers\Admin\BlogController::class, 'edit'])->name('edit');
+        // Route::post('/{id}', [App\Http\Controllers\Admin\BlogController::class, 'update'])->name('update');
+        // Route::delete('/:id}', [App\Http\Controllers\Admin\BlogController::class, 'destroy'])->name('destroy');
+    });
+
     // Blogs
     // Route::prefix('blogs')->name('blogs.')->group(function () {
     //     Route::get('/', [App\Http\Controllers\Admin\BlogController::class, 'index'])->name('index');
