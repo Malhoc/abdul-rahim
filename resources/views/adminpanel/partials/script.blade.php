@@ -7,6 +7,8 @@
 <!-- Custom and plugin javascript -->
 <script src="{{ asset('adminpanel') }}/js/inspinia.js"></script>
 <script src="{{ asset('adminpanel') }}/js/plugins/pace/pace.min.js"></script>
+<!-- iCheck -->
+<script src="{{ asset('assets/adminpanel') }}/js/plugins/iCheck/icheck.min.js"></script>
 <!-- SUMMERNOTE -->
 <script src="{{ asset('adminpanel') }}/js/plugins/summernote/summernote.min.js"></script>
 

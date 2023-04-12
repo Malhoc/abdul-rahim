@@ -49,7 +49,19 @@
                 </a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="{{route('admin.videos.create')}}">Create New</a></li>
-                    <li><a href="{{route('admin.videos.index')}}">List / Report</a></li>
+                    <li><a href="{{route('admin.videos.index')}}">List</a></li>
+                </ul>
+            </li>
+
+            <li class="@if (request()->is('videos/*'))  {{'active'}} @else {{''}} @endif">
+                <a href="{{route('admin.videos.index')}}">
+                    <i class="fa fa-users"></i>
+                    <span class="nav-label">Blogs</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="{{route('admin.blogs.create')}}">Create New</a></li>
+                    <li><a href="{{route('admin.blogs.index')}}">List </a></li>
                 </ul>
             </li>
 

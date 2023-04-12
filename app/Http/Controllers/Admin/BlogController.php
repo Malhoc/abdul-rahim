@@ -26,7 +26,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('adminpanel.pages.blogs.create');
     }
 
     /**
@@ -37,7 +37,33 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required|string|unique:blogs,title',
+            'summary' => 'string|nullable',
+            'description' => 'string|nullable',
+            'author_name' => 'string|nullable',
+            'image' => 'string|nullable',
+            'blog_category_id' => 'integer|nullable',
+            'user_id' => 'integer|required',
+        ]);
+
+        $inputs = $request->all();
+
+        if ($request->hasFile('thumbnail')) {
+            $thumbnailFile = $request->file('thumbnail');
+            $thumbnailPath = $thumbnailFile->store('blogs','public');
+            $inputs['thumbnail'] = $thumbnailPath;
+        }
+
+        if ($request->hasFile('image')) {
+            $imageFile = $request->file('image');
+            $imagePath = $imageFile->store('blogs','public');
+            $inputs['image'] = $imagePath;
+        }
+
+        Blog::create($inputs);
+
+        return redirect()->route('admin.blogs.index');
     }
 
     /**

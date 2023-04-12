@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         Storage::makeDirectory('public/videos');
+        Storage::makeDirectory('public/blogs');
         // \App\Models\User::factory(10)->create();
     }
 }

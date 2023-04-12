@@ -20,6 +20,10 @@
     <link
         href="{{ asset('adminpanel') }}/css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css"
         rel="stylesheet">
+    <link href="{{ asset('adminpanel') }}/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="{{ asset('adminpanel') }}/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    <link href="{{ asset('adminpanel') }}/css/plugins/datapicker/datepicker3.css" rel="stylesheet">
+
 
     <link href="{{asset('adminpanel')}}/css/plugins/select2/select2.min.css" rel="stylesheet">
 
