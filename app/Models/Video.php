@@ -10,6 +10,7 @@ class Video extends Model
     use HasFactory;
     protected $fillable = [
         'title',
+        'summary',
         'description',
         'author_name',
         'book',
@@ -21,10 +22,10 @@ class Video extends Model
         'meta_tag_keywords',
         'meta_tag_description',
         'thumbnail_alt',
-        // 'image_alt',
+        'video_alt',
         'is_active',
-        // 'blog_category_id',
-        'admin_id',
+        'video_category_id',
+        'user_id',
 
     ];
     // public function getRouteKeyName()

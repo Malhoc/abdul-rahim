@@ -141,24 +141,13 @@
                         </div>
                         <div class="widget--content">
                             <ul class="list-unstyled">
+                                @foreach ( $categories as $category)
                                 <li>
-                                    <a href="#">Video 1<span>(20)</span></a>
+                                    <a href="#">{{$category->name}}<span>(20)</span></a>
                                 </li>
-                                <li>
-                                    <a href="#">Video 2<span>(16)</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Video 3<span>(19)</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Video 4<span>(200)</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Video 5<span>(600)</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Video 6<span>(59)</span></a>
-                                </li>
+                                @endforeach
+
+
                             </ul>
                         </div>
                     </div> <!-- .widget-categories end -->

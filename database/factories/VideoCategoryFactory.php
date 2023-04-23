@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\VideogCategory>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\VideoCategory>
  */
-class VideogCategoryFactory extends Factory
+class VideoCategoryFactory extends Factory
 {
     /**
      * Define the model's default state.

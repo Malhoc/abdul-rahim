@@ -2,9 +2,9 @@
 
 @section('content')
     <!-- Page Title #5
-                ===
-                ===
-                === === === === === === === === === === === === === -->
+                    ===
+                    ===
+                    === === === === === === === === === === === === === -->
     <section id="page-title" class="page-title bg-overlay bg-overlay-dark3">
         <div class="bg-section">
             <img src="{{ asset('assets') }}/images/page-title/title-6.jpg" alt="Background" />
@@ -33,30 +33,38 @@
         <!-- .container end -->
     </section> <!-- #page-title end -->
     <!-- Blog Grid
-            ===
-            ===
-            === === === === === === === === === === === === === -->
+                ===
+                ===
+                === === === === === === === === === === === === === -->
+
     <section id="blog" class="blog blog-grid">
         <div class="container">
 
+                <div class="widget widget-search">
+                    <div class="widget--content">
+                        <form class="form-search" action="{{route('videos.search')}}" method="post">
+                            @csrf
+                            <div class="input-group">
+                                <input type="text" name='keyword' class="form-control" placeholder="Type Your Search Words">
+                                <span class="input-group-btn">
+                                    <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+                                </span>
+
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+
+                    </div>
+                </div> <!-- .widget-search end -->
+
             <div class="row">
-                <!-- Blog Entry #1 -->
 
-
-                    {{-- <iframe
-                        src="https://player.vimeo.com/video/43005056?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0"
-                        width="370" height="248" frameborder="0" webkitallowfullscreen mozallowfullscreen
-                        allowfullscreen></iframe> --}}
-
-                {{-- <div class="col-xs-12 col-sm-12  col-md-12 ">
-                    <iframe src="{{ asset('storage') }}/videos/mixkit.mp4" width="370px" height="260px"></iframe>
-                </div> --}}
                 @foreach ($videos as $video)
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="blog-entry">
                             <div class="entry--img">
                                 <div style="width:370px; height:255px; box-sizing:border-box;">
-                                    <video  src="{{ asset('storage') }}/{{$video->video}}" >
+                                    <video src="{{ asset('storage') }}/{{ $video->video }}">
                                 </div>
 
                             </div>
@@ -78,7 +86,8 @@
                                         Feb 22, 2017
                                     </div>
                                     <div class="entry--more">
-                                        <a href="{{route('videos.show', $video->id)}}"><i class="fa fa-long-arrow-right"></i><span>more</span></a>
+                                        <a href="{{ route('videos.show', $video->id) }}"><i
+                                                class="fa fa-long-arrow-right"></i><span>more</span></a>
                                     </div>
                                 </div>
                             </div>

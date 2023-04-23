@@ -12,8 +12,10 @@ class VideoSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run():void
     {
-        //
+
+        \App\Models\Video::factory(12)->create();
+
     }
 }

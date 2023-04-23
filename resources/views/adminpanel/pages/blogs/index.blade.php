@@ -82,12 +82,14 @@
                                         @foreach ($blogs as $blog)
                                             <tr>
                                                 <td>{{ $blog->title }}</td>
-                                                <td>{{ $blog->description }}</td>
+                                                <td>{{ $blog->author_name }}</td>
                                                 <td>{{ $blog->summary }}</td>
-                                                <td>{{ $blog->description }}</td>
-                                                <td>{{ $blog->image}}</td>
                                                 <td>{{ $blog->blog_category_id}}</td>
-                                                <td>{{ $blog->user_id}}</td>
+                                                @if ($blog->is_active)
+                                                <td>Public</td>
+                                                @else
+                                                <td>Private</td>
+                                                @endif
                                                 </td>
                                                 <td class="text-center">
                                                     <div class="btn-group">

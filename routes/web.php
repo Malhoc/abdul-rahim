@@ -27,6 +27,7 @@ Route::prefix('videos')->name('videos.')->group(function () {
     Route::get('/', [App\Http\Controllers\VideoController::class, 'index'])->name('index');
     Route::get('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
     Route::get('/{video}', [App\Http\Controllers\VideoController::class, 'show'])->name('show');
+    Route::post('/search', [App\Http\Controllers\VideoController::class, 'search'])->name('search');
 });
 Route::prefix('blogs')->name('blogs.')->group(function () {
     Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('index');

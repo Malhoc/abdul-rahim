@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\VideogCategory;
+use App\Models\VideoCategory;
 use App\Http\Requests\StoreVideogCategoryRequest;
 use App\Http\Requests\UpdateVideogCategoryRequest;
 
@@ -15,8 +15,7 @@ class VideogCategoryController extends Controller
      */
     public function index()
     {
-        //
-        return view('pages.videos');
+        
     }
 
     /**
