@@ -11,9 +11,17 @@
                     <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut"
                         data-easeout="Power4.easeInOut" data-masterspeed="2000"
                         data-thumb="assets/images/sliders/thumb/1.jpg">
+
                         <!-- MAIN IMAGE -->
-                        <img src="assets/images/sliders/slide-bg/1.jpg" alt="Slide Background Image" width="1920"
-                            height="1280" />
+
+                            {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" alt="Slide Background Image" width="1920 "
+                                height="1280" autoplay> --}}
+                                <div class="col-xs-12 col-sm-12  col-md-12 text-center">
+                                    <iframe width="800" height="450" src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" frameborder="0" allowfullscreen autoplay loop></iframe>
+
+                                </div>
+
+
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-130"
                             data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"

@@ -94,7 +94,7 @@
                                                 <td class="text-center">
                                                     <div class="btn-group">
 
-                                                        <a href="{{ route('admin.videos.edit', $blog) }}"
+                                                        <a href="{{ route('admin.blogs.edit', $blog) }}"
                                                             class="btn-white btn btn-xs">Edit</a>
                                                         <button onclick="deleteRecord({{ $blog->id }})"
                                                             class="btn-white btn btn-xs">Delete</button>

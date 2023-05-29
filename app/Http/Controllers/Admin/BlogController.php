@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class BlogController extends Controller
 {
@@ -42,13 +43,13 @@ class BlogController extends Controller
             'summary' => 'string|nullable',
             'description' => 'string|nullable',
             'author_name' => 'string|nullable',
-            'image' => 'string|nullable',
+            'image' => 'file|nullable',
             'blog_category_id' => 'integer|nullable',
-            'user_id' => 'integer|required',
+            // 'user_id' => 'integer|required',
         ]);
 
-        $inputs = $request->all();
-
+         $inputs = $request->all();
+         $inputs['slug'] = Str::slug($request->title);
         if ($request->hasFile('thumbnail')) {
             $thumbnailFile = $request->file('thumbnail');
             $thumbnailPath = $thumbnailFile->store('blogs','public');
@@ -60,6 +61,7 @@ class BlogController extends Controller
             $imagePath = $imageFile->store('blogs','public');
             $inputs['image'] = $imagePath;
         }
+
 
         Blog::create($inputs);
 
@@ -83,9 +85,10 @@ class BlogController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Blog $blog)
     {
-        //
+        return view("adminpanel.pages.blogs.edit", compact('blog'));
+
     }
 
     /**
@@ -97,7 +100,36 @@ class BlogController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'title' => 'required|string|unique:blogs,title,'. $id,
+            'summary' => 'string|nullable',
+            'description' => 'string|nullable',
+            'author_name' => 'string|nullable',
+            'image' => 'file|nullable',
+            'blog_category_id' => 'integer|nullable',
+
+        ]);
+        $blog = Blog::find($id);
+        $blog->title = $request->title;
+        $blog->summary = $request->summary;
+        $blog->description = $request->description;
+        $blog->author_name = $request->author_name;
+        if ($request->hasFile('thumbnail')) {
+            $thumbnailFile = $request->file('thumbnail');
+            $thumbnailPath = $thumbnailFile->store('blogs','public');
+            $blog->thumbnail =  $thumbnailPath;
+        }
+        if ($request->hasFile('image')) {
+            $imageFile = $request->file('image');
+            $imagePath = $imageFile->store('blogs','public');
+            $blog->image = $imagePath;
+        }
+        $blog->meta_tag_title = $request->meta_tag_title;
+        $blog->meta_tag_keywords = $request->meta_tag_keywords;
+        $blog->meta_tag_description = $request->meta_tag_description;
+        $blog->save();
+        return redirect()->route('admin.blogs.index');
+
     }
 
     /**

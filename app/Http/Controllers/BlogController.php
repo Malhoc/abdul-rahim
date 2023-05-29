@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Http\Requests\StoreBlogRequest;
 use App\Http\Requests\UpdateBlogRequest;
+use Illuminate\Http\Request;
+
 
 class BlogController extends Controller
 {
@@ -16,9 +18,14 @@ class BlogController extends Controller
     public function index()
     {
         $blogs = Blog::all();
+        // $recentBlogs = Blog::where('is_active', true)->orderBy('id', 'desc')->get()->take(3);
         return view('pages.blogs.index', compact('blogs'));
     }
-
+    public function show(Blog $blog)
+    {
+        $singleBlog = $blog;
+        return view('pages.blogs.show',compact('singleBlog'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -28,6 +35,7 @@ class BlogController extends Controller
     {
         //
     }
+
 
     /**
      * Store a newly created resource in storage.
@@ -46,10 +54,7 @@ class BlogController extends Controller
      * @param  \App\Models\Blog  $blog
      * @return \Illuminate\Http\Response
      */
-    public function show(Blog $blog)
-    {
-        return view('pages.blogs.show');
-    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -61,7 +66,18 @@ class BlogController extends Controller
     {
         //
     }
+    public function search(Request $request)
+    {
+        $request->validate([
+            'keyword' => 'required'
+        ]);
+        $keyword = $request->keyword;
+        $blogs = Blog::where('is_active', true)->where('title', 'like', '%' . $keyword . '%')
+            ->orderBy('id', 'ASC')->paginate(10);
 
+        return view('pages.blogs.index',compact('blogs'));
+
+    }
     /**
      * Update the specified resource in storage.
      *

@@ -82,9 +82,10 @@ class VideoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Video $video)
     {
-        //
+        return view("adminpanel.pages.videos.edit",  compact('video'));
+
     }
 
     /**
@@ -96,7 +97,31 @@ class VideoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validate($request, [
+            'title' => 'string|required',
+            'description' => 'string|required',
+            'author_name' => 'string|required',
+            'book' => 'string|required',
+            'narrated_by' => 'string|required',
+            'video' => 'file|required',
+
+        ]);
+
+        $video = Video::find($id);
+
+        $video->title = $request->title;
+        $video->description = $request->description;
+        $video->author_name = $request->author_name;
+        $video->book = $request->book;
+        $video->narrated_by = $request->narrated_by;
+
+        $name = null;
+        $videoFile = $request->file('video');
+        $videoPath = $videoFile->store('videos','public');
+        $video->video = $videoPath;
+        $video->save();
+        return redirect('admin.videos.index');
+
     }
 
     /**
@@ -107,6 +132,15 @@ class VideoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $video = Video::find($id);
+
+        if($video){
+            $video->delete();
+            return redirect()->back()->with(['success'=>'Successfully deleted!']);
+        } else {
+            return redirect()->back()->with(['error'=>'Record does not exist!']);
+        }
+
+
     }
 }
