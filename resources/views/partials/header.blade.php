@@ -11,8 +11,8 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="logo" href="{{ route('index') }}">
-                    <img class="logo-light" src="{{ asset('assets') }}/images/logo/logo-light.png" alt="League Logo">
-                    <img class="logo-dark" src="{{ asset('assets') }}/images/logo/logo-dark.png" alt="League Logo">
+                    <img class="logo-light" src="{{ asset('assets') }}/images/logo/hadees.jpg" alt="League Logo" width="60px" height="60px">
+                    <img class="logo-dark" src="{{ asset('assets') }}/images/logo/hadees.jpg" alt="League Logo" width="60px" height="60px">
                 </a>
             </div>
 

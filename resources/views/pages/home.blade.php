@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <!-- Hero Section
-    ====================================== -->
+        ====================================== -->
     <section id="slider" class="slider slider-overlay-dark">
         <!-- START REVOLUTION SLIDER 5.0 -->
         <div class="rev_slider_wrapper">
@@ -14,13 +14,8 @@
 
                         <!-- MAIN IMAGE -->
 
-                            {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" alt="Slide Background Image" width="1920 "
-                                height="1280" autoplay> --}}
-                                <div class="col-xs-12 col-sm-12  col-md-12 text-center">
-                                    <iframe width="800" height="450" src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" frameborder="0" allowfullscreen autoplay loop></iframe>
-
-                                </div>
-
+                        <img src="{{ asset('assets') }}/images/sliders/slide-bg/1.jpg" alt="Slide Background Image"
+                            width="1920 " height="1280" autoplay>
 
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-130"
@@ -208,9 +203,413 @@
         </div>
         <!-- END OF SLIDER WRAPPER -->
     </section>
+    <div class="clearfix mb-150"></div>
     <!-- #hero end -->
+    {{-- Ummah's Feature Start --}}
+
+    {{-- <section id="calendar" class="calendar section-2 bg-overlay bg-overlay-dark4 ">
+        <div class="bg-section ">
+            <img src="assets/images/background/bg-12.jpg" alt="bg">
+        </div>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+                    <div class="heading heading-2 mb-60 text--center">
+                        <p class="heading--subtitle text-theme">Get Ready</p>
+                        <h2 class="heading--title text-white">Conference Daily Program</h2>
+                        <div class="divider--line divider--center divider--gray"></div>
+                    </div>
+                </div><!-- .col-md-8 end -->
+            </div><!-- .row end -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                   <div class="calendar-panel">
+                    <div class="calendar--heading">
+                        <div class="calendar--icon">
+                            <i class="lnr lnr-briefcase"></i>
+                        </div>
+                        <h2>Social Media Conference</h2>
+                            <p>Feb 22, 2017</p>
+                        <div class="divider--line"></div>
+
+                    </div><!-- .calendar--heading end -->
+                    <div class="calendar--body">
+                    <div class="calendar--date">
+                        <h6>12:00 - 14:30</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    <div class="calendar--date">
+                        <h6>15:00 - 19:00</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    <div class="calendar--date">
+                        <h6>21:00 - 00:00</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    </div><!-- .calendar--body end -->
+                    </div><!-- .calendar-panel end -->
+
+                </div><!-- .col-md-4 end -->
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                   <div class="calendar-panel">
+                    <div class="calendar--heading">
+                        <div class="calendar--icon">
+                            <i class="lnr lnr-bullhorn"></i>
+                        </div>
+                        <h2>Branding Conference</h2>
+                            <p>Feb 24, 2017</p>
+                        <div class="divider--line"></div>
+                    </div><!-- .calendar--heading end -->
+                    <div class="calendar--body">
+                    <div class="calendar--date">
+                        <h6>12:00 - 14:30</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    <div class="calendar--date">
+                        <h6>15:00 - 19:00</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    <div class="calendar--date">
+                        <h6>21:00 - 00:00</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    </div><!-- .calendar--body end -->
+                    </div><!-- .calendar-panel end -->
+                </div><!-- .col-md-4 end -->
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                   <div class="calendar-panel">
+                    <div class="calendar--heading">
+                        <div class="calendar--icon">
+                            <i class="lnr lnr-chart-bars"></i>
+                        </div>
+                        <h2>Marketing Conference</h2>
+                            <p>Feb 26, 2017</p>
+                        <div class="divider--line"></div>
+                    </div><!-- .calendar--heading end -->
+                    <div class="calendar--body">
+                    <div class="calendar--date">
+                        <h6>12:00 - 14:30</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    <div class="calendar--date">
+                        <h6>15:00 - 19:00</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    <div class="calendar--date">
+                        <h6>21:00 - 00:00</h6>
+                        <p>Collecting a wide array of samples and inspiration is a great way to start your next awesome project. At its core, every brand has something.</p>
+                    </div><!-- .date end -->
+                    </div><!-- .calendar--body end -->
+                    </div><!-- .calendar-panel end -->
+
+                </div><!-- .col-md-4 end -->
+
+            </div><!-- .row end -->
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="text-center mt-10">
+                        <a class="btn btn--white btn--bordered" href="#">Download PDF</a>
+                    </div>
+                </div><!-- .col-md-12 end -->
+            </div><!-- .row end -->
+        </div><!-- .container end -->
+    </section><!-- #calendar end --> --}}
+    <section class="bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12  col-md-12">
+                    <div class="collection_info">
+                        <div class="colindextitle incomplete">
+
+                            <div class="english">Sunan Abi Dawud</div>
+                            <div class=clear></div>
+                        </div>
+                    <div class="colindextitle">
+                        Sunan Abi Dawud is a collection of hadith compiled by Imam Abu Dawud Sulayman ibn al-Ash'ath as-Sijistani (rahimahullah). It is widely considered to be among the six canonical collections of hadith (Kutub as-Sittah) of the Sunnah of the Prophet (ﷺ). It consists of 5274 ahadith in 43 books.
+                        <br><br><a href="/abudawud/letter">Letter from Imam Abu Dawud to the people of Makkah explaining his book, terms he uses, and his methodology.</a><br><div align=right style="padding-top: 7px;"><a href="/abudawud/about">More information ...</a></div>
+
+                        </div>
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Purification (Kitab Al-Taharah)</td>
+                                <td> كتاب الطهارة </td>
+                                <td> 1 &ensp;to &ensp; 390 </td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td> Prayer (Kitab Al-Salat) </td>
+                                <td >كتاب الصلاة </td>
+                                <td> 391 &ensp;to &ensp; 1160 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>The Book Of The Prayer For Rain (Kitab al-Istisqa')</td>
+                                <td>كتاب الاستسقاء</td>
+                                <td> 1161 &ensp;to &ensp; 1197 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Prayer (Kitab Al-Salat): Detailed Rules of Law about the Prayer during Journey</td>
+                                <td>كتاب صلاة السفر</td>
+                                <td> 1198 &ensp;to &ensp; 1249 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Prayer (Kitab Al-Salat): Voluntary Prayers</td>
+                                <td>كتاب التطوع</td>
+                                <td> 1250 &ensp;to &ensp; 1370 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Prayer (Kitab Al-Salat): Detailed Injunctions about Ramadan</td>
+                                <td>كتاب شهر رمضان</td>
+                                <td> 1371 &ensp;to &ensp; 1400 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">7</th>
+                                <td> Prayer (Kitab Al-Salat): Prostration while reciting the Qur'an </td>
+                                <td>كتاب سجود القرآن</td>
+                                <td> 1401 &ensp;to &ensp; 1415 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">8</th>
+                                <td> Prayer (Kitab Al-Salat): Detailed Injunctions about Witr </td>
+                                <td>كتاب الوتر </td>
+                                <td> 1416 &ensp;to &ensp; 1555 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">9</th>
+                                <td> Zakat (Kitab Al-Zakat) </td>
+                                <td> كتاب الزكاة </td>
+                                <td> 1556 &ensp;to &ensp; 1700 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">10</th>
+                                <td> The Book of Lost and Found Items </td>
+                                <td> كتاب اللقطة </td>
+                                <td> 1701 &ensp;to &ensp; 1720 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>The Rites of Hajj (Kitab Al-Manasik Wa'l-Hajj)</td>
+                                <td> كتاب المناسك </td>
+                                <td> 1721 &ensp;to &ensp; 2045 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">12</th>
+                                <td>Marriage (Kitab Al-Nikah)</td>
+                                <td>كتاب النكاح </td>
+                                <td> 2046 &ensp;to &ensp; 2174 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td>Divorce (Kitab Al-Talaq)</td>
+                                <td> كتاب الطلاق </td>
+                                <td> 2175 &ensp;to &ensp; 2312 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">14</th>
+                                <td> Fasting (Kitab Al-Siyam) </td>
+                                <td>  كتاب الصوم </td>
+                                <td> 2313 &ensp;to &ensp; 2476 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">15</th>
+                                <td> Jihad (Kitab Al-Jihad) </td>
+                                <td> كتاب الجهاد </td>
+                                <td> 2477 &ensp;to &ensp; 2787 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">16</th>
+                                <td> Sacrifice (Kitab Al-Dahaya) </td>
+                                <td> كتاب الضحايا  </td>
+                                <td> 2788 &ensp;to &ensp; 2843 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">17</th>
+                                <td> Game (Kitab Al-Said) </td>
+                                <td> كتاب الصيد </td>
+                                <td> 2844 &ensp;to &ensp; 2861 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">18</th>
+                                <td> Wills (Kitab Al-Wasaya) </td>
+                                <td> كتاب الوصايا </td>
+                                <td> 2862 &ensp;to &ensp; 2884 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">19</th>
+                                <td>Shares of Inheritance (Kitab Al-Fara'id)</td>
+                                <td> كتاب الفرائض </td>
+                                <td> 2885 &ensp;to &ensp; 2927 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">20</th>
+                                <td> Tribute, Spoils, and Rulership (Kitab Al-Kharaj, Wal-Fai' Wal-Imarah) </td>
+                                <td> كتاب الخراج والإمارة والفىء  </td>
+                                <td> 2928 &ensp;to &ensp; 3088 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">21</th>
+                                <td> Funerals (Kitab Al-Jana'iz) </td>
+                                <td> كتاب الجنائز  </td>
+                                <td> 3089 &ensp;to &ensp; 3241 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">22</th>
+                                <td> Oaths and Vows (Kitab Al-Aiman Wa Al-Nudhur) </td>
+                                <td> كتاب الأيمان والنذور </td>
+                                <td> 3242 &ensp;to &ensp; 3325 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">23</th>
+                                <td> Commercial Transactions (Kitab Al-Buyu) </td>
+                                <td>  كتاب البيوع </td>
+                                <td> 3326 &ensp;to &ensp; 3415 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">24</th>
+                                <td> Wages (Kitab Al-Ijarah) </td>
+                                <td>  كتاب الإجارة </td>
+                                <td> 3416 &ensp;to &ensp; 3570 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">25</th>
+                                <td> The Office of the Judge (Kitab Al-Aqdiyah) </td>
+                                <td>  كتاب الأقضية  </td>
+                                <td> 3571 &ensp;to &ensp; 3640 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">26</th>
+                                <td>Knowledge (Kitab Al-Ilm)</td>
+                                <td> كتاب العلم  </td>
+                                <td> 3641 &ensp;to &ensp; 3668 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">27</th>
+                                <td> Drinks (Kitab Al-Ashribah) </td>
+                                <td>  كتاب الأشربة  </td>
+                                <td> 3669 &ensp;to &ensp; 3735 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">28</th>
+                                <td>Foods (Kitab Al-At'imah)</td>
+                                <td>كتاب الأطعمة </td>
+                                <td> 3736 &ensp;to &ensp; 3854 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">29</th>
+                                <td> Medicine (Kitab Al-Tibb) </td>
+                                <td> كتاب الطب  </td>
+                                <td> 3855 &ensp;to &ensp; 3903 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">30</th>
+                                <td> Divination and Omens (Kitab Al-Kahanah Wa Al-Tatayyur) </td>
+                                <td> كتاب الكهانة و التطير </td>
+                                <td> 3904 &ensp;to &ensp; 1197 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">31</th>
+                                <td> The Book of Manumission of Slaves </td>
+                                <td>  كتاب العتق  </td>
+                                <td> 3926 &ensp;to &ensp; 3968 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">32</th>
+                                <td>Dialects and Readings of the Qur'an (Kitab Al-Huruf Wa Al-Qira'at)</td>
+                                <td> كتاب الحروف والقراءات </td>
+                                <td> 3969 &ensp;to &ensp; 4008 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">33</th>
+                                <td>Hot Baths (Kitab Al-Hammam)</td>
+                                <td> كتاب الحمَّام </td>
+                                <td> 4009 &ensp;to &ensp; 4019 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">34</th>
+                                <td> Clothing (Kitab Al-Libas) </td>
+                                <td> كتاب اللباس </td>
+                                <td> 4020 &ensp;to &ensp; 4158 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">35</th>
+                                <td> Combing the Hair (Kitab Al-Tarajjul) </td>
+                                <td> كتاب الترجل  </td>
+                                <td> 4159 &ensp;to &ensp; 4213 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">36</th>
+                                <td> Signet-Rings (Kitab Al-Khatam) </td>
+                                <td> كتاب الخاتم </td>
+                                <td> 4214 &ensp;to &ensp; 4239 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">37</th>
+                                <td> Trials and Fierce Battles (Kitab Al-Fitan Wa Al-Malahim) </td>
+                                <td> كتاب الفتن والملاحم </td>
+                                <td> 4240 &ensp;to &ensp; 4278 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">38</th>
+                                <td> The Promised Deliverer (Kitab Al-Mahdi) </td>
+                                <td> كتاب المهدى  </td>
+                                <td> 4279 &ensp;to &ensp; 4290 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">39</th>
+                                <td> Battles (Kitab Al-Malahim) </td>
+                                <td> كتاب الملاحم  </td>
+                                <td> 4291 &ensp;to &ensp; 4350 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">40</th>
+                                <td>Prescribed Punishments (Kitab Al-Hudud)</td>
+                                <td>  كتاب الحدود </td>
+                                <td> 4351 &ensp;to &ensp; 4493 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">41</th>
+                                <td> Types of Blood-Wit (Kitab Al-Diyat) </td>
+                                <td> كتاب الديات </td>
+                                <td> 4494 &ensp;to &ensp; 4595 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">42</th>
+                                <td> Model Behavior of the Prophet (Kitab Al-Sunnah) </td>
+                                <td> كتاب السنة </td>
+                                <td> 4596 &ensp;to &ensp; 4772 </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">43</th>
+                                <td> General Behavior (Kitab Al-Adab) </td>
+                                <td> كتاب الأدب  </td>
+                                <td> 4773 &ensp;to &ensp; 5274 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Feature #1
-    ============================================= -->
+        ============================================= -->
     <section id="feature1" class="feature feature-1 text-center bg-white">
         <div class="container">
             <div class="row">
@@ -277,7 +676,7 @@
     </section>
     <!-- #feature1 end -->
     <!-- Portfolio 3 Column
-    ============================================= -->
+        ============================================= -->
     <section id="portfolio" class="portfolio portfolio-grid portfolio-3col portfolio-hover-2">
         <div class="container">
             <div class="row clearfix">
@@ -297,7 +696,7 @@
             </div>
             <div class="row">
                 <!-- Portfolio Filter
-        ============================================= -->
+            ============================================= -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-filter">
                     <ul class="list-inline mb-0">
                         <li>
@@ -492,7 +891,7 @@
     </section>
     <!-- #portfolio end -->
     <!-- Testimonial #1
-    ============================================= -->
+        ============================================= -->
     <section id="testimonial1" class="testimonial testimonial-boxed testimonial-1 bg-white">
         <div class="container">
             <div class="row clearfix">
@@ -619,58 +1018,9 @@
         <!-- .container end -->
     </section>
     <!-- #testimonial1 end -->
-    <!-- Video #1
-    ============================================= -->
-    <section id="video1" class="video-button video-button-1 bg-overlay bg-overlay-dark4">
-        <div class="bg-section">
-            <img src="assets/images/background/bg-9.jpg" alt="Background" />
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="video--content">
-                        <div class="bg-section">
-                            <img src="assets/images/background/bg-10.jpg" alt="Background" />
-                        </div>
-                        <div class="video-overlay">
-                            <div class="video--button">
-                                <div class="pos-vertical-center">
-                                    <a class="popup-video" href="https://www.youtube.com/watch?v=nrJtHemSPW4">
-                                        <i class="icon icon-Play"></i> Play Video !
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- .video--player end -->
-                        </div>
-                    </div>
-                </div>
-                <!-- .col-md-6 end -->
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="heading heading-2 mb-30">
-                        <h2 class="heading--title text-white">
-                            We love what we do<br />and we do it with passion!
-                        </h2>
-                        <div class="divider--line"></div>
-                    </div>
-                    <p>
-                        After all, as described in Web Design Trends 2015 & 2016, vision
-                        dominates a lot of our subconscious interpretation of the world
-                        around us. On top of that, pleasing images create a better user
-                        experience. Rounding up a bunch of specific designs and talking
-                        about the merits of each is the perfect way to find common
-                        ground. Collecting a wide array of samples and inspiration is a
-                        great way to start your next awesome project.At League Agency!
-                    </p>
-                    <a class="btn btn--white btn--bordered" href="#">Read More</a>
-                </div>
-                <!-- .col-md-6 end -->
-            </div>
-            <!-- .row end -->
-        </div>
-        <!-- .container end -->
-    </section>
+    
     <!-- Blog Grid Carousel
-    ============================================= -->
+        ============================================= -->
     <section id="blog" class="blog blog-carousel pb-100">
         <div class="container">
             <div class="row clearfix">
@@ -882,7 +1232,7 @@
     </section>
     <!-- #blog end -->
     <!-- Skills #1
-    ============================================= -->
+        ============================================= -->
     <section id="skills1" class="skills bg-white">
         <div class="container">
             <div class="row">
@@ -956,7 +1306,7 @@
     </section>
     <!-- #skills1 end -->
     <!-- Counter #4
-    ============================================= -->
+        ============================================= -->
     <section id="counter4" class="counter counter-dark bg-overlay bg-overlay-theme3">
         <div class="bg-section">
             <img src="assets/images/counter/counter-1.jpg" alt="Background" />
@@ -1004,276 +1354,223 @@
         <!-- .container end -->
     </section>
     <!-- #counter4 end -->
-     <!-- workflow
-===
-=== === === === === === === === === === === === === === -->
-<section id="workflow" class="workflow">
-    <div class="container">
-      <div class="row clearfix">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
-          <div class="heading heading-1 mb-30 text--center">
-            <p class="heading--subtitle">Explore and Create</p>
-            <h2 class="heading--title">Build Your Own Website</h2>
-            <p class="heading--desc">
-              League impresses you with fully responsiveness and highly
-              customization. We did it in combination of very clean and
-              flexible design.
-            </p>
-            <div class="divider--line divider--center mb-0"></div>
-          </div>
+    <!-- workflow
+    ===
+    === === === === === === === === === === === === === === -->
+    <section id="workflow" class="workflow">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+                    <div class="heading heading-1 mb-30 text--center">
+                        <p class="heading--subtitle">Explore and Create</p>
+                        <h2 class="heading--title">Build Your Own Website</h2>
+                        <p class="heading--desc">
+                            League impresses you with fully responsiveness and highly
+                            customization. We did it in combination of very clean and
+                            flexible design.
+                        </p>
+                        <div class="divider--line divider--center mb-0"></div>
+                    </div>
+                </div>
+                <!-- .col-md-8 end -->
+            </div>
+            <!-- .row end -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#Brainstorming" data-toggle="tab">Brainstorming</a>
+                            </li>
+                            <li><a href="#Prototype" data-toggle="tab">Prototype</a></li>
+                            <li><a href="#Design" data-toggle="tab">Design</a></li>
+                            <li>
+                                <a href="#Evaluation" data-toggle="tab">Evaluation</a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="Brainstorming">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+                                        <div class="col-img">
+                                            <div class="bg-section">
+                                                <img src="assets/images/workflow/1.jpg" alt="Background" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+                                        <div class="col-content bg-white">
+                                            <h4>Take all data <br />and think about it!</h4>
+                                            <p>
+                                                After all, as described in Web Design Trends 2015 &
+                                                2016, vision dominates a lot of our subconscious
+                                                interpretation of the world around us. On top of
+                                                that, pleasing images create a better user
+                                                experience.
+                                            </p>
+                                            <p>
+                                                At League Agency, we shows only the best websites
+                                                and portfolios built completely with passion,
+                                                simplicity & creativity !
+                                            </p>
+                                            <a class="btn btn--primary mt-20" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .row end -->
+                            </div>
+                            <!-- .tab-pane end -->
+                            <div class="tab-pane" id="Prototype">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+                                        <div class="col-img">
+                                            <div class="bg-section">
+                                                <img src="assets/images/workflow/2.jpg" alt="Background" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+                                        <div class="col-content bg-white">
+                                            <h4>Work on the design<br />taking in mind.</h4>
+                                            <p>
+                                                After all, as described in Web Design Trends 2015 &
+                                                2016, vision dominates a lot of our subconscious
+                                                interpretation of the world around us. On top of
+                                                that, pleasing images create a better user
+                                                experience.
+                                            </p>
+                                            <p>
+                                                At League Agency, we shows only the best websites
+                                                and portfolios built completely with passion,
+                                                simplicity & creativity !
+                                            </p>
+                                            <a class="btn btn--primary mt-20" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .row end -->
+                            </div>
+                            <!-- .tab-pane end -->
+                            <div class="tab-pane" id="Design">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+                                        <div class="col-img">
+                                            <div class="bg-section">
+                                                <img src="assets/images/workflow/3.jpg" alt="Background" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+                                        <div class="col-content bg-white">
+                                            <h4>Know about customers and competitors.</h4>
+                                            <p>
+                                                After all, as described in Web Design Trends 2015 &
+                                                2016, vision dominates a lot of our subconscious
+                                                interpretation of the world around us. On top of
+                                                that, pleasing images create a better user
+                                                experience.
+                                            </p>
+                                            <p>
+                                                At League Agency, we shows only the best websites
+                                                and portfolios built completely with passion,
+                                                simplicity & creativity !
+                                            </p>
+                                            <a class="btn btn--primary mt-20" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .row end -->
+                            </div>
+                            <!-- .tab-pane end -->
+                            <div class="tab-pane" id="Evaluation">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
+                                        <div class="col-img">
+                                            <div class="bg-section">
+                                                <img src="assets/images/workflow/4.jpg" alt="Background" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
+                                        <div class="col-content bg-white">
+                                            <h4>Work on the design <br />and think about it!</h4>
+                                            <p>
+                                                After all, as described in Web Design Trends 2015 &
+                                                2016, vision dominates a lot of our subconscious
+                                                interpretation of the world around us. On top of
+                                                that, pleasing images create a better user
+                                                experience.
+                                            </p>
+                                            <p>
+                                                At League Agency, we shows only the best websites
+                                                and portfolios built completely with passion,
+                                                simplicity & creativity !
+                                            </p>
+                                            <a class="btn btn--primary mt-20" href="#">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .row end -->
+                            </div>
+                            <!-- .tab-pane end -->
+                        </div>
+                    </div>
+                    <!-- .tabs end -->
+                </div>
+                <!-- .col-md-12 end -->
+            </div>
+            <!-- .row end -->
         </div>
-        <!-- .col-md-8 end -->
-      </div>
-      <!-- .row end -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="tabs">
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs">
-              <li class="active">
-                <a href="#Brainstorming" data-toggle="tab">Brainstorming</a>
-              </li>
-              <li><a href="#Prototype" data-toggle="tab">Prototype</a></li>
-              <li><a href="#Design" data-toggle="tab">Design</a></li>
-              <li>
-                <a href="#Evaluation" data-toggle="tab">Evaluation</a>
-              </li>
-            </ul>
+        <!-- .container end -->
+    </section>
+    <!-- #workflow end -->
+    <!-- Clients Carousel
+    ============================================= -->
+    <section id="clients" class="clients clients-carousel bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="carousel carousel-dots" data-slide="6" data-slide-rs="2" data-autoplay="true"
+                        data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="3000">
+                        <!-- Client #1 -->
+                        <div class="client">
+                            <img class="center-block" src="assets/images/clients/1.png" alt="client" />
+                        </div>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div class="tab-pane fade in active" id="Brainstorming">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
-                    <div class="col-img">
-                      <div class="bg-section">
-                        <img
-                          src="assets/images/workflow/1.jpg"
-                          alt="Background"
-                        />
-                      </div>
+                        <!-- Client #2 -->
+                        <div class="client">
+                            <img class="center-block" src="assets/images/clients/2.png" alt="client" />
+                        </div>
+
+                        <!-- Client #3 -->
+                        <div class="client">
+                            <img class="center-block" src="assets/images/clients/3.png" alt="client" />
+                        </div>
+
+                        <!-- Client #4 -->
+                        <div class="client">
+                            <img class="center-block" src="assets/images/clients/4.png" alt="client" />
+                        </div>
+
+                        <!-- Client #5 -->
+                        <div class="client">
+                            <img class="center-block" src="assets/images/clients/5.png" alt="client" />
+                        </div>
+
+                        <!-- Client #6 -->
+                        <div class="client">
+                            <img class="center-block" src="assets/images/clients/6.png" alt="client" />
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
-                    <div class="col-content bg-white">
-                      <h4>Take all data <br />and think about it!</h4>
-                      <p>
-                        After all, as described in Web Design Trends 2015 &
-                        2016, vision dominates a lot of our subconscious
-                        interpretation of the world around us. On top of
-                        that, pleasing images create a better user
-                        experience.
-                      </p>
-                      <p>
-                        At League Agency, we shows only the best websites
-                        and portfolios built completely with passion,
-                        simplicity & creativity !
-                      </p>
-                      <a class="btn btn--primary mt-20" href="#"
-                        >read more</a
-                      >
-                    </div>
-                  </div>
                 </div>
-                <!-- .row end -->
-              </div>
-              <!-- .tab-pane end -->
-              <div class="tab-pane" id="Prototype">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
-                    <div class="col-img">
-                      <div class="bg-section">
-                        <img
-                          src="assets/images/workflow/2.jpg"
-                          alt="Background"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
-                    <div class="col-content bg-white">
-                      <h4>Work on the design<br />taking in mind.</h4>
-                      <p>
-                        After all, as described in Web Design Trends 2015 &
-                        2016, vision dominates a lot of our subconscious
-                        interpretation of the world around us. On top of
-                        that, pleasing images create a better user
-                        experience.
-                      </p>
-                      <p>
-                        At League Agency, we shows only the best websites
-                        and portfolios built completely with passion,
-                        simplicity & creativity !
-                      </p>
-                      <a class="btn btn--primary mt-20" href="#"
-                        >read more</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .row end -->
-              </div>
-              <!-- .tab-pane end -->
-              <div class="tab-pane" id="Design">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
-                    <div class="col-img">
-                      <div class="bg-section">
-                        <img
-                          src="assets/images/workflow/3.jpg"
-                          alt="Background"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
-                    <div class="col-content bg-white">
-                      <h4>Know about customers and competitors.</h4>
-                      <p>
-                        After all, as described in Web Design Trends 2015 &
-                        2016, vision dominates a lot of our subconscious
-                        interpretation of the world around us. On top of
-                        that, pleasing images create a better user
-                        experience.
-                      </p>
-                      <p>
-                        At League Agency, we shows only the best websites
-                        and portfolios built completely with passion,
-                        simplicity & creativity !
-                      </p>
-                      <a class="btn btn--primary mt-20" href="#"
-                        >read more</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .row end -->
-              </div>
-              <!-- .tab-pane end -->
-              <div class="tab-pane" id="Evaluation">
-                <div class="row">
-                  <div class="col-xs-12 col-sm-5 col-md-6 pr-0">
-                    <div class="col-img">
-                      <div class="bg-section">
-                        <img
-                          src="assets/images/workflow/4.jpg"
-                          alt="Background"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-7 col-md-6 pl-0">
-                    <div class="col-content bg-white">
-                      <h4>Work on the design <br />and think about it!</h4>
-                      <p>
-                        After all, as described in Web Design Trends 2015 &
-                        2016, vision dominates a lot of our subconscious
-                        interpretation of the world around us. On top of
-                        that, pleasing images create a better user
-                        experience.
-                      </p>
-                      <p>
-                        At League Agency, we shows only the best websites
-                        and portfolios built completely with passion,
-                        simplicity & creativity !
-                      </p>
-                      <a class="btn btn--primary mt-20" href="#"
-                        >read more</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .row end -->
-              </div>
-              <!-- .tab-pane end -->
+                <!-- .col-md-12 end -->
             </div>
-          </div>
-          <!-- .tabs end -->
+            <!-- .row end -->
         </div>
-        <!-- .col-md-12 end -->
-      </div>
-      <!-- .row end -->
-    </div>
-    <!-- .container end -->
-  </section>
-  <!-- #workflow end -->
-  <!-- Clients Carousel
-============================================= -->
-<section id="clients" class="clients clients-carousel bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div
-            class="carousel carousel-dots"
-            data-slide="6"
-            data-slide-rs="2"
-            data-autoplay="true"
-            data-nav="false"
-            data-dots="false"
-            data-space="30"
-            data-loop="true"
-            data-speed="3000"
-          >
-            <!-- Client #1 -->
-            <div class="client">
-              <img
-                class="center-block"
-                src="assets/images/clients/1.png"
-                alt="client"
-              />
-            </div>
-
-            <!-- Client #2 -->
-            <div class="client">
-              <img
-                class="center-block"
-                src="assets/images/clients/2.png"
-                alt="client"
-              />
-            </div>
-
-            <!-- Client #3 -->
-            <div class="client">
-              <img
-                class="center-block"
-                src="assets/images/clients/3.png"
-                alt="client"
-              />
-            </div>
-
-            <!-- Client #4 -->
-            <div class="client">
-              <img
-                class="center-block"
-                src="assets/images/clients/4.png"
-                alt="client"
-              />
-            </div>
-
-            <!-- Client #5 -->
-            <div class="client">
-              <img
-                class="center-block"
-                src="assets/images/clients/5.png"
-                alt="client"
-              />
-            </div>
-
-            <!-- Client #6 -->
-            <div class="client">
-              <img
-                class="center-block"
-                src="assets/images/clients/6.png"
-                alt="client"
-              />
-            </div>
-          </div>
-        </div>
-        <!-- .col-md-12 end -->
-      </div>
-      <!-- .row end -->
-    </div>
-    <!-- .container end -->
-  </section>
-  <!-- #clients end -->
+        <!-- .container end -->
+    </section>
+    <!-- #clients end -->
 @endsection
