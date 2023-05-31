@@ -75,11 +75,42 @@
         </section>
 
 <div class="clearfix mb-150"></div>
-<!-- About #2
+<!-- Mission & Goal  #2
 ============================================= -->
+<section id="blog" class="blog blog-carousel pb-100">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+                <div class="heading heading-2 text--center mb-50">
+                    <p class="heading--subtitle">Who we are?</p>
+                    <h2 class="heading--title">Our Mission</h2>
+                    <p class="heading--desc">
+                        Follow our latest news and thoughts which focuses exclusively
+                        on design, art, vintage, and also our latest work updates.
+                    </p>
+                    <div class="divider--line divider--center m-0"></div>
+                </div>
+            </div>
+            <!-- .col-md-8 end -->
+        </div>
+        <div class="row clearfix">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+                <div class="heading heading-2 text--center mb-50">
+                    <p class="heading--subtitle">What our plans?</p>
+                    <h2 class="heading--title">Our Goal</h2>
+                    <p class="heading--desc">
+                        Follow our latest news and thoughts which focuses exclusively
+                        on design, art, vintage, and also our latest work updates.
+                    </p>
+                    <div class="divider--line divider--center m-0"></div>
+                </div>
+            </div>
+            <!-- .col-md-8 end -->
+        </div>
+    </div>
+</section>
 
-
-<section id="about2" class="about bg-white">
+{{-- <section id="about2" class="about bg-white">
 	<div class="container">
 		<div class="row clearfix">
 			<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
@@ -104,7 +135,7 @@
 	<!-- .container end -->
 </section>
 <!-- #about2 end -->
-<div class="clearfix mb-150"></div>
+<div class="clearfix mb-150"></div> --}}
 @endsection
 
 
