@@ -3,8 +3,13 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\VideoCreated;
+use App\Models\Subscribe;
 use App\Models\Video;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
+
 
 class VideoController extends Controller
 {
@@ -53,15 +58,23 @@ class VideoController extends Controller
         $videoFile = $request->file('video');
         $videoPath = $videoFile->store('videos','public');
 
-        Video::create([
+        $video = Video::create([
             'title' => $request->title,
             'description' => $request->description,
             'author_name' => $request->author_name,
             'book' => $request->book,
             'narrated_by' => $request->narrated_by,
             'video' => $videoPath,
+            'slug' => Str::slug($request->title),
         ]);
+        
 
+        if($video){
+            $newsletter = Subscribe::all();
+            foreach ($newsletter as $key => $row) {
+                Mail::to($row->email)->send(new VideoCreated());
+            }
+        }
         return redirect()->route('admin.videos.index');
     }
 

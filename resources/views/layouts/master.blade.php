@@ -16,9 +16,10 @@
 
         </div>
 
-        @include('partials.script')
 
     </div>
+    @include('partials.script')
+
 </body>
 
 </html>

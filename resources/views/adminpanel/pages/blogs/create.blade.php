@@ -74,16 +74,16 @@
 
                                         </div>
                                         <div class="form-group @error('author_name') has-error @enderror"><label
-                                            class="col-sm-2 control-label">Author:</label>
-                                        <div class="col-sm-10"><input id="author_name" value="{{ old('author_name') }}"
-                                                name="author_name" required type="text" placeholder="Unique"
-                                                class="form-control">
-                                            @error('author_name')
-                                                <span class="help-block m-b-none">{{ $message }}</span>
-                                            @enderror
-                                        </div>
+                                                class="col-sm-2 control-label">Author:</label>
+                                            <div class="col-sm-10"><input id="author_name" value="{{ old('author_name') }}"
+                                                    name="author_name" required type="text" placeholder="Unique"
+                                                    class="form-control">
+                                                @error('author_name')
+                                                    <span class="help-block m-b-none">{{ $message }}</span>
+                                                @enderror
+                                            </div>
 
-                                    </div>
+                                        </div>
 
                                         <div class="form-group @error('summary') has-error @enderror"><label
                                                 class="col-sm-2 control-label">Summary:</label>

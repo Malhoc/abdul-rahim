@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('content')
     <!-- Hero Section
-        ====================================== -->
+                        ====================================== -->
     <section id="slider" class="slider slider-overlay-dark">
         <!-- START REVOLUTION SLIDER 5.0 -->
         <div class="rev_slider_wrapper">
@@ -203,7 +203,7 @@
         </div>
         <!-- END OF SLIDER WRAPPER -->
     </section>
-    <div class="clearfix mb-150"></div>
+
     <!-- #hero end -->
     {{-- Ummah's Feature Start --}}
 
@@ -326,291 +326,296 @@
                             <div class="english">Sunan Abi Dawud</div>
                             <div class=clear></div>
                         </div>
-                    <div class="colindextitle">
-                        Sunan Abi Dawud is a collection of hadith compiled by Imam Abu Dawud Sulayman ibn al-Ash'ath as-Sijistani (rahimahullah). It is widely considered to be among the six canonical collections of hadith (Kutub as-Sittah) of the Sunnah of the Prophet (ﷺ). It consists of 5274 ahadith in 43 books.
-                        <br><br><a href="/abudawud/letter">Letter from Imam Abu Dawud to the people of Makkah explaining his book, terms he uses, and his methodology.</a><br><div align=right style="padding-top: 7px;"><a href="/abudawud/about">More information ...</a></div>
+                        <div class="colindextitle">
+                            Sunan Abi Dawud is a collection of hadith compiled by Imam Abu Dawud Sulayman ibn al-Ash'ath
+                            as-Sijistani (rahimahullah). It is widely considered to be among the six canonical collections
+                            of hadith (Kutub as-Sittah) of the Sunnah of the Prophet (ﷺ). It consists of 5274 ahadith in 43
+                            books.
+                            <br><br><a href="/abudawud/letter">Letter from Imam Abu Dawud to the people of Makkah
+                                explaining his book, terms he uses, and his methodology.</a><br>
+
 
                         </div>
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th></th>
-                                <th></th>
-                                <th></th>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Sunnah Abi Dawud Collection</th>
+                                    <th></th>
+                                    <th></th>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Purification (Kitab Al-Taharah)</td>
-                                <td> كتاب الطهارة </td>
-                                <td> 1 &ensp;to &ensp; 390 </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Purification (Kitab Al-Taharah)</td>
+                                    <td> كتاب الطهارة </td>
+                                    <td> 1 &ensp;to &ensp; 390 </td>
 
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td> Prayer (Kitab Al-Salat) </td>
-                                <td >كتاب الصلاة </td>
-                                <td> 391 &ensp;to &ensp; 1160 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>The Book Of The Prayer For Rain (Kitab al-Istisqa')</td>
-                                <td>كتاب الاستسقاء</td>
-                                <td> 1161 &ensp;to &ensp; 1197 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Prayer (Kitab Al-Salat): Detailed Rules of Law about the Prayer during Journey</td>
-                                <td>كتاب صلاة السفر</td>
-                                <td> 1198 &ensp;to &ensp; 1249 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Prayer (Kitab Al-Salat): Voluntary Prayers</td>
-                                <td>كتاب التطوع</td>
-                                <td> 1250 &ensp;to &ensp; 1370 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Prayer (Kitab Al-Salat): Detailed Injunctions about Ramadan</td>
-                                <td>كتاب شهر رمضان</td>
-                                <td> 1371 &ensp;to &ensp; 1400 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">7</th>
-                                <td> Prayer (Kitab Al-Salat): Prostration while reciting the Qur'an </td>
-                                <td>كتاب سجود القرآن</td>
-                                <td> 1401 &ensp;to &ensp; 1415 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">8</th>
-                                <td> Prayer (Kitab Al-Salat): Detailed Injunctions about Witr </td>
-                                <td>كتاب الوتر </td>
-                                <td> 1416 &ensp;to &ensp; 1555 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">9</th>
-                                <td> Zakat (Kitab Al-Zakat) </td>
-                                <td> كتاب الزكاة </td>
-                                <td> 1556 &ensp;to &ensp; 1700 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td> The Book of Lost and Found Items </td>
-                                <td> كتاب اللقطة </td>
-                                <td> 1701 &ensp;to &ensp; 1720 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">11</th>
-                                <td>The Rites of Hajj (Kitab Al-Manasik Wa'l-Hajj)</td>
-                                <td> كتاب المناسك </td>
-                                <td> 1721 &ensp;to &ensp; 2045 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">12</th>
-                                <td>Marriage (Kitab Al-Nikah)</td>
-                                <td>كتاب النكاح </td>
-                                <td> 2046 &ensp;to &ensp; 2174 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">13</th>
-                                <td>Divorce (Kitab Al-Talaq)</td>
-                                <td> كتاب الطلاق </td>
-                                <td> 2175 &ensp;to &ensp; 2312 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">14</th>
-                                <td> Fasting (Kitab Al-Siyam) </td>
-                                <td>  كتاب الصوم </td>
-                                <td> 2313 &ensp;to &ensp; 2476 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">15</th>
-                                <td> Jihad (Kitab Al-Jihad) </td>
-                                <td> كتاب الجهاد </td>
-                                <td> 2477 &ensp;to &ensp; 2787 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">16</th>
-                                <td> Sacrifice (Kitab Al-Dahaya) </td>
-                                <td> كتاب الضحايا  </td>
-                                <td> 2788 &ensp;to &ensp; 2843 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">17</th>
-                                <td> Game (Kitab Al-Said) </td>
-                                <td> كتاب الصيد </td>
-                                <td> 2844 &ensp;to &ensp; 2861 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">18</th>
-                                <td> Wills (Kitab Al-Wasaya) </td>
-                                <td> كتاب الوصايا </td>
-                                <td> 2862 &ensp;to &ensp; 2884 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">19</th>
-                                <td>Shares of Inheritance (Kitab Al-Fara'id)</td>
-                                <td> كتاب الفرائض </td>
-                                <td> 2885 &ensp;to &ensp; 2927 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">20</th>
-                                <td> Tribute, Spoils, and Rulership (Kitab Al-Kharaj, Wal-Fai' Wal-Imarah) </td>
-                                <td> كتاب الخراج والإمارة والفىء  </td>
-                                <td> 2928 &ensp;to &ensp; 3088 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">21</th>
-                                <td> Funerals (Kitab Al-Jana'iz) </td>
-                                <td> كتاب الجنائز  </td>
-                                <td> 3089 &ensp;to &ensp; 3241 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">22</th>
-                                <td> Oaths and Vows (Kitab Al-Aiman Wa Al-Nudhur) </td>
-                                <td> كتاب الأيمان والنذور </td>
-                                <td> 3242 &ensp;to &ensp; 3325 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">23</th>
-                                <td> Commercial Transactions (Kitab Al-Buyu) </td>
-                                <td>  كتاب البيوع </td>
-                                <td> 3326 &ensp;to &ensp; 3415 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">24</th>
-                                <td> Wages (Kitab Al-Ijarah) </td>
-                                <td>  كتاب الإجارة </td>
-                                <td> 3416 &ensp;to &ensp; 3570 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">25</th>
-                                <td> The Office of the Judge (Kitab Al-Aqdiyah) </td>
-                                <td>  كتاب الأقضية  </td>
-                                <td> 3571 &ensp;to &ensp; 3640 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">26</th>
-                                <td>Knowledge (Kitab Al-Ilm)</td>
-                                <td> كتاب العلم  </td>
-                                <td> 3641 &ensp;to &ensp; 3668 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">27</th>
-                                <td> Drinks (Kitab Al-Ashribah) </td>
-                                <td>  كتاب الأشربة  </td>
-                                <td> 3669 &ensp;to &ensp; 3735 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">28</th>
-                                <td>Foods (Kitab Al-At'imah)</td>
-                                <td>كتاب الأطعمة </td>
-                                <td> 3736 &ensp;to &ensp; 3854 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">29</th>
-                                <td> Medicine (Kitab Al-Tibb) </td>
-                                <td> كتاب الطب  </td>
-                                <td> 3855 &ensp;to &ensp; 3903 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">30</th>
-                                <td> Divination and Omens (Kitab Al-Kahanah Wa Al-Tatayyur) </td>
-                                <td> كتاب الكهانة و التطير </td>
-                                <td> 3904 &ensp;to &ensp; 1197 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">31</th>
-                                <td> The Book of Manumission of Slaves </td>
-                                <td>  كتاب العتق  </td>
-                                <td> 3926 &ensp;to &ensp; 3968 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">32</th>
-                                <td>Dialects and Readings of the Qur'an (Kitab Al-Huruf Wa Al-Qira'at)</td>
-                                <td> كتاب الحروف والقراءات </td>
-                                <td> 3969 &ensp;to &ensp; 4008 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">33</th>
-                                <td>Hot Baths (Kitab Al-Hammam)</td>
-                                <td> كتاب الحمَّام </td>
-                                <td> 4009 &ensp;to &ensp; 4019 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">34</th>
-                                <td> Clothing (Kitab Al-Libas) </td>
-                                <td> كتاب اللباس </td>
-                                <td> 4020 &ensp;to &ensp; 4158 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">35</th>
-                                <td> Combing the Hair (Kitab Al-Tarajjul) </td>
-                                <td> كتاب الترجل  </td>
-                                <td> 4159 &ensp;to &ensp; 4213 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">36</th>
-                                <td> Signet-Rings (Kitab Al-Khatam) </td>
-                                <td> كتاب الخاتم </td>
-                                <td> 4214 &ensp;to &ensp; 4239 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">37</th>
-                                <td> Trials and Fierce Battles (Kitab Al-Fitan Wa Al-Malahim) </td>
-                                <td> كتاب الفتن والملاحم </td>
-                                <td> 4240 &ensp;to &ensp; 4278 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">38</th>
-                                <td> The Promised Deliverer (Kitab Al-Mahdi) </td>
-                                <td> كتاب المهدى  </td>
-                                <td> 4279 &ensp;to &ensp; 4290 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">39</th>
-                                <td> Battles (Kitab Al-Malahim) </td>
-                                <td> كتاب الملاحم  </td>
-                                <td> 4291 &ensp;to &ensp; 4350 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">40</th>
-                                <td>Prescribed Punishments (Kitab Al-Hudud)</td>
-                                <td>  كتاب الحدود </td>
-                                <td> 4351 &ensp;to &ensp; 4493 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">41</th>
-                                <td> Types of Blood-Wit (Kitab Al-Diyat) </td>
-                                <td> كتاب الديات </td>
-                                <td> 4494 &ensp;to &ensp; 4595 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">42</th>
-                                <td> Model Behavior of the Prophet (Kitab Al-Sunnah) </td>
-                                <td> كتاب السنة </td>
-                                <td> 4596 &ensp;to &ensp; 4772 </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">43</th>
-                                <td> General Behavior (Kitab Al-Adab) </td>
-                                <td> كتاب الأدب  </td>
-                                <td> 4773 &ensp;to &ensp; 5274 </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td> Prayer (Kitab Al-Salat) </td>
+                                    <td>كتاب الصلاة </td>
+                                    <td> 391 &ensp;to &ensp; 1160 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>The Book Of The Prayer For Rain (Kitab al-Istisqa')</td>
+                                    <td>كتاب الاستسقاء</td>
+                                    <td> 1161 &ensp;to &ensp; 1197 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Prayer (Kitab Al-Salat): Detailed Rules of Law about the Prayer during Journey</td>
+                                    <td>كتاب صلاة السفر</td>
+                                    <td> 1198 &ensp;to &ensp; 1249 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Prayer (Kitab Al-Salat): Voluntary Prayers</td>
+                                    <td>كتاب التطوع</td>
+                                    <td> 1250 &ensp;to &ensp; 1370 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Prayer (Kitab Al-Salat): Detailed Injunctions about Ramadan</td>
+                                    <td>كتاب شهر رمضان</td>
+                                    <td> 1371 &ensp;to &ensp; 1400 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td> Prayer (Kitab Al-Salat): Prostration while reciting the Qur'an </td>
+                                    <td>كتاب سجود القرآن</td>
+                                    <td> 1401 &ensp;to &ensp; 1415 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td> Prayer (Kitab Al-Salat): Detailed Injunctions about Witr </td>
+                                    <td>كتاب الوتر </td>
+                                    <td> 1416 &ensp;to &ensp; 1555 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td> Zakat (Kitab Al-Zakat) </td>
+                                    <td> كتاب الزكاة </td>
+                                    <td> 1556 &ensp;to &ensp; 1700 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">10</th>
+                                    <td> The Book of Lost and Found Items </td>
+                                    <td> كتاب اللقطة </td>
+                                    <td> 1701 &ensp;to &ensp; 1720 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>The Rites of Hajj (Kitab Al-Manasik Wa'l-Hajj)</td>
+                                    <td> كتاب المناسك </td>
+                                    <td> 1721 &ensp;to &ensp; 2045 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>Marriage (Kitab Al-Nikah)</td>
+                                    <td>كتاب النكاح </td>
+                                    <td> 2046 &ensp;to &ensp; 2174 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>Divorce (Kitab Al-Talaq)</td>
+                                    <td> كتاب الطلاق </td>
+                                    <td> 2175 &ensp;to &ensp; 2312 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">14</th>
+                                    <td> Fasting (Kitab Al-Siyam) </td>
+                                    <td> كتاب الصوم </td>
+                                    <td> 2313 &ensp;to &ensp; 2476 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">15</th>
+                                    <td> Jihad (Kitab Al-Jihad) </td>
+                                    <td> كتاب الجهاد </td>
+                                    <td> 2477 &ensp;to &ensp; 2787 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">16</th>
+                                    <td> Sacrifice (Kitab Al-Dahaya) </td>
+                                    <td> كتاب الضحايا </td>
+                                    <td> 2788 &ensp;to &ensp; 2843 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">17</th>
+                                    <td> Game (Kitab Al-Said) </td>
+                                    <td> كتاب الصيد </td>
+                                    <td> 2844 &ensp;to &ensp; 2861 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">18</th>
+                                    <td> Wills (Kitab Al-Wasaya) </td>
+                                    <td> كتاب الوصايا </td>
+                                    <td> 2862 &ensp;to &ensp; 2884 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">19</th>
+                                    <td>Shares of Inheritance (Kitab Al-Fara'id)</td>
+                                    <td> كتاب الفرائض </td>
+                                    <td> 2885 &ensp;to &ensp; 2927 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">20</th>
+                                    <td> Tribute, Spoils, and Rulership (Kitab Al-Kharaj, Wal-Fai' Wal-Imarah) </td>
+                                    <td> كتاب الخراج والإمارة والفىء </td>
+                                    <td> 2928 &ensp;to &ensp; 3088 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">21</th>
+                                    <td> Funerals (Kitab Al-Jana'iz) </td>
+                                    <td> كتاب الجنائز </td>
+                                    <td> 3089 &ensp;to &ensp; 3241 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">22</th>
+                                    <td> Oaths and Vows (Kitab Al-Aiman Wa Al-Nudhur) </td>
+                                    <td> كتاب الأيمان والنذور </td>
+                                    <td> 3242 &ensp;to &ensp; 3325 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">23</th>
+                                    <td> Commercial Transactions (Kitab Al-Buyu) </td>
+                                    <td> كتاب البيوع </td>
+                                    <td> 3326 &ensp;to &ensp; 3415 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">24</th>
+                                    <td> Wages (Kitab Al-Ijarah) </td>
+                                    <td> كتاب الإجارة </td>
+                                    <td> 3416 &ensp;to &ensp; 3570 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">25</th>
+                                    <td> The Office of the Judge (Kitab Al-Aqdiyah) </td>
+                                    <td> كتاب الأقضية </td>
+                                    <td> 3571 &ensp;to &ensp; 3640 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">26</th>
+                                    <td>Knowledge (Kitab Al-Ilm)</td>
+                                    <td> كتاب العلم </td>
+                                    <td> 3641 &ensp;to &ensp; 3668 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">27</th>
+                                    <td> Drinks (Kitab Al-Ashribah) </td>
+                                    <td> كتاب الأشربة </td>
+                                    <td> 3669 &ensp;to &ensp; 3735 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">28</th>
+                                    <td>Foods (Kitab Al-At'imah)</td>
+                                    <td>كتاب الأطعمة </td>
+                                    <td> 3736 &ensp;to &ensp; 3854 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">29</th>
+                                    <td> Medicine (Kitab Al-Tibb) </td>
+                                    <td> كتاب الطب </td>
+                                    <td> 3855 &ensp;to &ensp; 3903 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">30</th>
+                                    <td> Divination and Omens (Kitab Al-Kahanah Wa Al-Tatayyur) </td>
+                                    <td> كتاب الكهانة و التطير </td>
+                                    <td> 3904 &ensp;to &ensp; 1197 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">31</th>
+                                    <td> The Book of Manumission of Slaves </td>
+                                    <td> كتاب العتق </td>
+                                    <td> 3926 &ensp;to &ensp; 3968 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">32</th>
+                                    <td>Dialects and Readings of the Qur'an (Kitab Al-Huruf Wa Al-Qira'at)</td>
+                                    <td> كتاب الحروف والقراءات </td>
+                                    <td> 3969 &ensp;to &ensp; 4008 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">33</th>
+                                    <td>Hot Baths (Kitab Al-Hammam)</td>
+                                    <td> كتاب الحمَّام </td>
+                                    <td> 4009 &ensp;to &ensp; 4019 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">34</th>
+                                    <td> Clothing (Kitab Al-Libas) </td>
+                                    <td> كتاب اللباس </td>
+                                    <td> 4020 &ensp;to &ensp; 4158 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">35</th>
+                                    <td> Combing the Hair (Kitab Al-Tarajjul) </td>
+                                    <td> كتاب الترجل </td>
+                                    <td> 4159 &ensp;to &ensp; 4213 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">36</th>
+                                    <td> Signet-Rings (Kitab Al-Khatam) </td>
+                                    <td> كتاب الخاتم </td>
+                                    <td> 4214 &ensp;to &ensp; 4239 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">37</th>
+                                    <td> Trials and Fierce Battles (Kitab Al-Fitan Wa Al-Malahim) </td>
+                                    <td> كتاب الفتن والملاحم </td>
+                                    <td> 4240 &ensp;to &ensp; 4278 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">38</th>
+                                    <td> The Promised Deliverer (Kitab Al-Mahdi) </td>
+                                    <td> كتاب المهدى </td>
+                                    <td> 4279 &ensp;to &ensp; 4290 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">39</th>
+                                    <td> Battles (Kitab Al-Malahim) </td>
+                                    <td> كتاب الملاحم </td>
+                                    <td> 4291 &ensp;to &ensp; 4350 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">40</th>
+                                    <td>Prescribed Punishments (Kitab Al-Hudud)</td>
+                                    <td> كتاب الحدود </td>
+                                    <td> 4351 &ensp;to &ensp; 4493 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">41</th>
+                                    <td> Types of Blood-Wit (Kitab Al-Diyat) </td>
+                                    <td> كتاب الديات </td>
+                                    <td> 4494 &ensp;to &ensp; 4595 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">42</th>
+                                    <td> Model Behavior of the Prophet (Kitab Al-Sunnah) </td>
+                                    <td> كتاب السنة </td>
+                                    <td> 4596 &ensp;to &ensp; 4772 </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">43</th>
+                                    <td> General Behavior (Kitab Al-Adab) </td>
+                                    <td> كتاب الأدب </td>
+                                    <td> 4773 &ensp;to &ensp; 5274 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Feature #1
-        ============================================= -->
-    <section id="feature1" class="feature feature-1 text-center bg-white">
+                        ============================================= -->
+    {{-- <section id="feature1" class="feature feature-1 text-center bg-white">
         <div class="container">
             <div class="row">
                 <!-- Panel #1 -->
@@ -673,11 +678,11 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #feature1 end -->
     <!-- Portfolio 3 Column
-        ============================================= -->
-    <section id="portfolio" class="portfolio portfolio-grid portfolio-3col portfolio-hover-2">
+                        ============================================= -->
+    {{-- <section id="portfolio" class="portfolio portfolio-grid portfolio-3col portfolio-hover-2">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
@@ -696,7 +701,7 @@
             </div>
             <div class="row">
                 <!-- Portfolio Filter
-            ============================================= -->
+                ============================================= -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-filter">
                     <ul class="list-inline mb-0">
                         <li>
@@ -888,11 +893,11 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #portfolio end -->
     <!-- Testimonial #1
-        ============================================= -->
-    <section id="testimonial1" class="testimonial testimonial-boxed testimonial-1 bg-white">
+                        ============================================= -->
+    {{-- <section id="testimonial1" class="testimonial testimonial-boxed testimonial-1 bg-white">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
@@ -1016,12 +1021,12 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #testimonial1 end -->
-    
+
     <!-- Blog Grid Carousel
-        ============================================= -->
-    <section id="blog" class="blog blog-carousel pb-100">
+                        ============================================= -->
+    {{-- <section id="blog" class="blog blog-carousel pb-100">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
@@ -1229,11 +1234,11 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #blog end -->
     <!-- Skills #1
-        ============================================= -->
-    <section id="skills1" class="skills bg-white">
+                        ============================================= -->
+    {{-- <section id="skills1" class="skills bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-6">
@@ -1303,11 +1308,11 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #skills1 end -->
     <!-- Counter #4
-        ============================================= -->
-    <section id="counter4" class="counter counter-dark bg-overlay bg-overlay-theme3">
+                        ============================================= -->
+    {{-- <section id="counter4" class="counter counter-dark bg-overlay bg-overlay-theme3">
         <div class="bg-section">
             <img src="assets/images/counter/counter-1.jpg" alt="Background" />
         </div>
@@ -1352,12 +1357,12 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #counter4 end -->
     <!-- workflow
-    ===
-    === === === === === === === === === === === === === === -->
-    <section id="workflow" class="workflow">
+                    ===
+                    === === === === === === === === === === === === === === -->
+    {{-- <section id="workflow" class="workflow">
         <div class="container">
             <div class="row clearfix">
                 <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
@@ -1525,11 +1530,11 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #workflow end -->
     <!-- Clients Carousel
-    ============================================= -->
-    <section id="clients" class="clients clients-carousel bg-white">
+                    ============================================= -->
+    {{-- <section id="clients" class="clients clients-carousel bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
@@ -1571,6 +1576,145 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section>
+    </section> --}}
     <!-- #clients end -->
+
+    {{-- Subscribe Modal Section  --}}
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Subscribe to our Newsletter </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <div class="modal-body">
+                    <form id="subscribeForm" method="POST" action="{{ route('newsletter.store') }}" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group" @error('name') has-error @enderror>
+                            <label for="name" class="col-form-label">Name:</label>
+                            <input required type="text" class="form-control" name="name" id="name">
+                            @error('name')
+                                <span class="help-block m-b-none">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="form-group" @error('name') has-error @enderror>
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input required type="email" class="form-control" name="email" id="email">
+                            @error('email')
+                                <span class="help-block m-b-none">{{ $message }}</span>
+                            @enderror
+                        </div>
+                        <div class="modal-footer">
+                            <button id="modalCloseBtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-success">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
+@section('custom-script')
+    <script>
+        $(document).ready(function() {
+            const hasVisited = localStorage.getItem('checkVisited');
+            if (!hasVisited) {
+                $('#exampleModal').modal('show')
+
+            }
+        });
+
+        $("#subscribeForm").submit(function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            $.ajax({
+                url: $(this).attr('action'),
+                type: $(this).attr('method'),
+                data: formData,
+                contentType: false,
+                processData: false,
+                success: (response) => {
+                    $('.modal').each(function(){
+                    $(this).modal('hide');
+                    localStorage.setItem('hasVisited', 'true');
+                });
+                },
+                error: (error) => {
+                    console.log(error);
+                    var errors = $.parseJSON(error.responseText);
+                    $.each(errors, function (key, value) {
+                        alert(value);
+                    });
+                }
+            });
+        });
+
+        $("#modalCloseBtn").click(function(){
+            localStorage.setItem('hasVisited', 'true');
+        });
+    </script>
+@endsection
+{{-- @section('custom-script')
+    <script>
+        $(document).ready(function() {
+
+            $('.summernote').summernote({
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'underline', 'clear']],
+                    ['fontsize', ['fontsize']],
+                    ['fontname', ['fontname']],
+                    ['height', ['height']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                ],
+            });
+
+        });
+    </script>
+
+    <script>
+        var Success = `{{ \Session::has('success') }}`;
+        var Error = `{{ \Session::has('error') }}`;
+
+        if (Success) {
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 7000
+                };
+                toastr.success('Success Message', `{{ \Session::get('success') }}`);
+
+            }, 1300);
+        } else if (Error) {
+            setTimeout(function() {
+                toastr.options = {
+                    closeButton: true,
+                    progressBar: true,
+                    showMethod: 'slideDown',
+                    timeOut: 4000
+                };
+                toastr.error('Failure Message', `{{ \Session::get('error') }}`);
+
+            }, 1300);
+        }
+    </script>
+@endsection --}}

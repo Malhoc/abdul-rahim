@@ -21,6 +21,9 @@ Route::get('/about-us', function () {
     return view('pages.aboutUs');
 })->name('about-us');
 
+
+Route::post('/subscribe', [App\Http\Controllers\SubscribeController::class, 'store'])->name('newsletter.store');
+
 Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'index'])->name('contact-us');
 
 Route::prefix('videos')->name('videos.')->group(function () {

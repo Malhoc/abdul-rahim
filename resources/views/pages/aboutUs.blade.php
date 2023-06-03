@@ -85,8 +85,8 @@
                     <p class="heading--subtitle">Who we are?</p>
                     <h2 class="heading--title">Our Mission</h2>
                     <p class="heading--desc">
-                        Follow our latest news and thoughts which focuses exclusively
-                        on design, art, vintage, and also our latest work updates.
+                        We are making videos on different topics on Ahadees e Nabvi from different writers on different topics.
+
                     </p>
                     <div class="divider--line divider--center m-0"></div>
                 </div>
@@ -99,8 +99,7 @@
                     <p class="heading--subtitle">What our plans?</p>
                     <h2 class="heading--title">Our Goal</h2>
                     <p class="heading--desc">
-                        Follow our latest news and thoughts which focuses exclusively
-                        on design, art, vintage, and also our latest work updates.
+                        We want to increase the spread of knowledge of Hadees to entire mankind.
                     </p>
                     <div class="divider--line divider--center m-0"></div>
                 </div>

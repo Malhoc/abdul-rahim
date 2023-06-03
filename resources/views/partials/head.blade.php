@@ -19,8 +19,8 @@
     <link href="{{asset('assets')}}/css/external.css" rel="stylesheet">
     <link href="{{asset('assets')}}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{asset('assets')}}/css/style.css" rel="stylesheet">
-    <link href="{{asset('assets')}}/css/plugins/summernote/summernote.css" rel="stylesheet">
-    <link href="{{asset('assets')}}/css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
+    {{-- <link href="{{asset('assets')}}/css/plugins/summernote/summernote.css" rel="stylesheet">
+    <link href="{{asset('assets')}}/css/plugins/summernote/summernote-bs3.css" rel="stylesheet"> --}}
     <!-- RS5.0 Main Stylesheet -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="{{asset('assets')}}/revolution/css/layers.css">

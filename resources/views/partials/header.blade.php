@@ -108,7 +108,7 @@
                 </ul>
 
                 <!-- Module Search -->
-                <div class="module module-search pull-left">
+                {{-- <div class="module module-search pull-left">
                     <div class="module-icon search-icon">
                         <i class="fa fa-search"></i>
                         <span class="title">search</span>
@@ -122,16 +122,17 @@
                                             <input type="text" class="form-control"
                                                 placeholder="Type Search Words Then Enter">
                                             <button class="btn" type="button"><i class="fa fa-search"></i></button>
-                                        </form><!-- .form-search end -->
-                                    </div><!-- .col-md-8 end -->
-                                </div><!-- .row end -->
-                            </div><!-- .container end -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <a class="module-cancel" href="#"><i class="fa fa-close"></i></a>
                     </div>
-                </div><!-- .module-search end -->
+                </div> --}}
+                <!-- .module-search end -->
                 <!-- Module Side NAV -->
-                <div class="module module-side-nav pull-left">
+                {{-- <div class="module module-side-nav pull-left">
                     <div class="module-icon side-nav-icon">
                         <i class="fa fa-bars"></i>
                         <span class="title">Side Navigation</span>
@@ -175,7 +176,7 @@
                             <a class="module-cancel" href="#"><i class="fa fa-close"></i></a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
             <!-- /.navbar-collapse -->
         </div>

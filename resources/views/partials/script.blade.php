@@ -14,3 +14,5 @@
 <script type="text/javascript" src="{{asset('assets')}}/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
 <!-- RS Configration JS Files -->
 <script src="{{asset('assets')}}/js/rsconfig.js"></script>
+
+@yield('custom-script')
