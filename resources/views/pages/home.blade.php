@@ -1630,7 +1630,7 @@
 @section('custom-script')
     <script>
         $(document).ready(function() {
-            const hasVisited = localStorage.getItem('checkVisited');
+            const hasVisited = localStorage.getItem('hasVisited');
             if (!hasVisited) {
                 $('#exampleModal').modal('show')
 

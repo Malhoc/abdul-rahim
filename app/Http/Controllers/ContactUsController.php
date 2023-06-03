@@ -36,7 +36,24 @@ class ContactUsController extends Controller
      */
     public function store(StoreContactUsRequest $request)
     {
-        //
+        $this->validate($request, [
+
+            'first_name' => 'required|string',
+            'last_name' => 'string|nullable',
+            'email' => 'required|string|unique:contact_us,email',
+            'phone' => 'numeric|nullable',
+            'message' => 'required|string',
+
+        ]);
+        $inputs = $request->all();
+        $contact = ContactUs::create($inputs);
+
+        if($contact){
+
+            return redirect()->back()->with(['success'=>'Message Successfully Sent!']);
+        } else {
+            return redirect()->back()->with(['error'=>'There is Problem in Sending Message']);
+        }
     }
 
     /**

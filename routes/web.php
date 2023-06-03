@@ -25,6 +25,7 @@ Route::get('/about-us', function () {
 Route::post('/subscribe', [App\Http\Controllers\SubscribeController::class, 'store'])->name('newsletter.store');
 
 Route::get('/contact-us', [App\Http\Controllers\ContactUsController::class, 'index'])->name('contact-us');
+Route::post('/contact-us/store', [App\Http\Controllers\ContactUsController::class, 'store'])->name('contact-us.store');
 
 Route::prefix('videos')->name('videos.')->group(function () {
     Route::get('/', [App\Http\Controllers\VideoController::class, 'index'])->name('index');
