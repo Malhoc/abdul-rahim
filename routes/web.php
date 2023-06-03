@@ -38,7 +38,6 @@ Route::prefix('blogs')->name('blogs.')->group(function () {
     Route::get('/', [App\Http\Controllers\BlogController::class, 'index'])->name('index');
     Route::get('/search', [App\Http\Controllers\BlogController::class, 'search'])->name('search');
     Route::get('/{blog}', [App\Http\Controllers\BlogController::class, 'show'])->name('show');
-    Route::post('/search', [App\Http\Controllers\BlogController::class, 'search'])->name('search');
 
 });
 
