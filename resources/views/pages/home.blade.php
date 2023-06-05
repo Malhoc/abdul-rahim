@@ -1,209 +1,26 @@
 @extends('layouts.master')
 @section('content')
     <!-- Hero Section
-                        ====================================== -->
-    <section id="slider" class="slider slider-overlay-dark">
-        <!-- START REVOLUTION SLIDER 5.0 -->
-        <div class="rev_slider_wrapper">
-            <div id="slider1" class="rev_slider" data-version="5.0">
-                <ul>
-                    <!-- slide 1 -->
-                    <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut"
-                        data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                        data-thumb="assets/images/sliders/thumb/1.jpg">
+                                ====================================== -->
+    <div class=" sliderContainer">
+        <video autoplay muted id="video1" class="video1">
+            <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
+        </video>
 
-                        <!-- MAIN IMAGE -->
+        <video muted id="video2" class="video2">
+            <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" type="video/mp4">
+        </video>
 
-                        <img src="{{ asset('assets') }}/images/sliders/slide-bg/1.jpg" alt="Slide Background Image"
-                            width="1920 " height="1280" autoplay>
+        <video muted id="video3" class="video3">
+            <source src="{{ asset('assets') }}/images/sliders/slide-bg/motorway.mp4" type="video/mp4">
+        </video>
 
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-130"
-                            data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--subheadline">Explore & Create</div>
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-65"
-                            data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--headline">Unleash Your Potential</div>
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="20"
-                            data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--bio text-center">
-                                League is a creative multi-concept WordPress theme
-                                perfectly<br />
-                                designed to make awesome website for any business.
-                            </div>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="100"
-                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
-                            data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_out="x:inherit;y:inherit;" data-start="1250" data-splitin="none" data-splitout="none"
-                            data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
-                            data-basealign="slide" data-responsive_offset="on" data-responsive="off">
-                            <div class="slide-action">
-                                <a class="btn btn--secondary btn--white mr-30" href="#">Read More
-                                </a>
-                                <a class="btn btn--white btn--bordered" href="#">Get Started</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- slide 2 -->
-                    <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut"
-                        data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                        data-thumb="assets/images/sliders/thumb/2.jpg">
-                        <!-- MAIN IMAGE -->
-                        <img src="assets/images/sliders/slide-bg/4.jpg" alt="Slide Background Image" width="1920"
-                            height="1280" />
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-130"
-                            data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--subheadline">
-                                Clean, Powerful & Creative
-                            </div>
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-65"
-                            data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--headline">Start Your Business</div>
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="20"
-                            data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--bio text-center">
-                                League is a creative multi-concept WordPress theme
-                                perfectly<br />
-                                designed to make awesome website for any business.
-                            </div>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="100"
-                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
-                            data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_out="x:inherit;y:inherit;" data-start="1250" data-splitin="none"
-                            data-splitout="none"
-                            data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
-                            data-basealign="slide" data-responsive_offset="on" data-responsive="off">
-                            <div class="slide-action">
-                                <a class="btn btn--white btn--bordered" href="#">Purchase Now</a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <!-- slide 3 -->
-                    <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut"
-                        data-easeout="Power4.easeInOut" data-masterspeed="2000"
-                        data-thumb="assets/images/sliders/thumb/3.jpg">
-                        <!-- MAIN IMAGE -->
-                        <img src="assets/images/sliders/slide-bg/9.jpg" alt="Slide Background Image" width="1920"
-                            height="1280" />
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-130"
-                            data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--subheadline">Create Your Life</div>
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="-65"
-                            data-whitespace="nowrap" data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none"
-                            data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--headline">Poweful and Creative!</div>
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="20"
-                            data-width="none" data-height="none" data-transform_idle="o:1;"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
-                            data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000"
-                            data-splitin="none" data-splitout="none" data-responsive_offset="on">
-                            <div class="slide--bio text-center">
-                                League is a creative multi-concept WordPress theme
-                                perfectly<br />
-                                designed to make awesome website for any business.
-                            </div>
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption" data-x="center" data-hoffset="0" data-y="center" data-voffset="100"
-                            data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;"
-                            data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power3.easeOut;"
-                            data-style_hover="c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);"
-                            data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;"
-                            data-transform_out="y:[175%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;"
-                            data-mask_out="x:inherit;y:inherit;" data-start="1250" data-splitin="none"
-                            data-splitout="none"
-                            data-actions='[{"event":"click","action":"jumptoslide","slide":"rs-164","delay":""}]'
-                            data-basealign="slide" data-responsive_offset="on" data-responsive="off">
-                            <div class="slide-action">
-                                <a class="btn btn--secondary btn--white mr-30" href="#">Read More
-                                </a>
-                                <a class="btn btn--white btn--bordered" href="#">Get Started</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!-- END REVOLUTION SLIDER -->
+        <div class="text">
+            <h1 class="sliderh1"></h1>
+            <p></p>
         </div>
-        <!-- END OF SLIDER WRAPPER -->
-    </section>
 
+    </div>
     <!-- #hero end -->
     {{-- Ummah's Feature Start --}}
 
@@ -614,7 +431,7 @@
     </section>
 
     <!-- Feature #1
-                        ============================================= -->
+                                ============================================= -->
     {{-- <section id="feature1" class="feature feature-1 text-center bg-white">
         <div class="container">
             <div class="row">
@@ -681,7 +498,7 @@
     </section> --}}
     <!-- #feature1 end -->
     <!-- Portfolio 3 Column
-                        ============================================= -->
+                                ============================================= -->
     {{-- <section id="portfolio" class="portfolio portfolio-grid portfolio-3col portfolio-hover-2">
         <div class="container">
             <div class="row clearfix">
@@ -896,7 +713,7 @@
     </section> --}}
     <!-- #portfolio end -->
     <!-- Testimonial #1
-                        ============================================= -->
+                                ============================================= -->
     {{-- <section id="testimonial1" class="testimonial testimonial-boxed testimonial-1 bg-white">
         <div class="container">
             <div class="row clearfix">
@@ -1025,7 +842,7 @@
     <!-- #testimonial1 end -->
 
     <!-- Blog Grid Carousel
-                        ============================================= -->
+                                ============================================= -->
     {{-- <section id="blog" class="blog blog-carousel pb-100">
         <div class="container">
             <div class="row clearfix">
@@ -1237,7 +1054,7 @@
     </section> --}}
     <!-- #blog end -->
     <!-- Skills #1
-                        ============================================= -->
+                                ============================================= -->
     {{-- <section id="skills1" class="skills bg-white">
         <div class="container">
             <div class="row">
@@ -1311,7 +1128,7 @@
     </section> --}}
     <!-- #skills1 end -->
     <!-- Counter #4
-                        ============================================= -->
+                                ============================================= -->
     {{-- <section id="counter4" class="counter counter-dark bg-overlay bg-overlay-theme3">
         <div class="bg-section">
             <img src="assets/images/counter/counter-1.jpg" alt="Background" />
@@ -1360,8 +1177,8 @@
     </section> --}}
     <!-- #counter4 end -->
     <!-- workflow
-                    ===
-                    === === === === === === === === === === === === === === -->
+                            ===
+                            === === === === === === === === === === === === === === -->
     {{-- <section id="workflow" class="workflow">
         <div class="container">
             <div class="row clearfix">
@@ -1533,7 +1350,7 @@
     </section> --}}
     <!-- #workflow end -->
     <!-- Clients Carousel
-                    ============================================= -->
+                            ============================================= -->
     {{-- <section id="clients" class="clients clients-carousel bg-white">
         <div class="container">
             <div class="row">
@@ -1601,7 +1418,8 @@
                     </div>
                 @endif
                 <div class="modal-body">
-                    <form id="subscribeForm" method="POST" action="{{ route('newsletter.store') }}" enctype="multipart/form-data">
+                    <form id="subscribeForm" method="POST" action="{{ route('newsletter.store') }}"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="form-group" @error('name') has-error @enderror>
                             <label for="name" class="col-form-label">Name:</label>
@@ -1618,7 +1436,8 @@
                             @enderror
                         </div>
                         <div class="modal-footer">
-                            <button id="modalCloseBtn" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button id="modalCloseBtn" type="button" class="btn btn-secondary"
+                                data-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-success">Subscribe</button>
                         </div>
                     </form>
@@ -1647,24 +1466,45 @@
                 contentType: false,
                 processData: false,
                 success: (response) => {
-                    $('.modal').each(function(){
-                    $(this).modal('hide');
-                    localStorage.setItem('hasVisited', 'true');
-                });
+                    $('.modal').each(function() {
+                        $(this).modal('hide');
+                        localStorage.setItem('hasVisited', 'true');
+                    });
                 },
                 error: (error) => {
                     console.log(error);
                     var errors = $.parseJSON(error.responseText);
-                    $.each(errors, function (key, value) {
+                    $.each(errors, function(key, value) {
                         alert(value);
                     });
                 }
             });
         });
 
-        $("#modalCloseBtn").click(function(){
+        $("#modalCloseBtn").click(function() {
             localStorage.setItem('hasVisited', 'true');
         });
+
+        var video1 = document.getElementById('video1');
+        var video2 = document.getElementById('video2');
+        var video3 = document.getElementById('video3');
+
+        video1.onended = function() {
+            video2.play();
+            video1.style.opacity = 0;
+            video2.style.opacity = 1;
+        }
+
+        video2.onended = function() {
+            video3.play();
+            video2.style.opacity = 0;
+            video3.style.opacity = 1;
+        }
+        video3.onended = function() {
+            video1.play();
+            video3.style.opacity = 0;
+            video1.style.opacity = 1;
+        }
     </script>
 @endsection
 {{-- @section('custom-script')

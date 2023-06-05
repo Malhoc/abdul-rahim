@@ -7,7 +7,7 @@
     <div class="page-wrapper">
 
         @include('partials.loader')
-        <div id="wrapper" class="wrapper clearfix">
+        <div id="wrapper" > 
             @include('partials.header')
 
             @yield('content')

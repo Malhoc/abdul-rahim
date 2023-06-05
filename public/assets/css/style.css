@@ -110,9 +110,13 @@ body {
 .bankItem{
     font-weight: 20px !important;
 }
+.iconStyle{
+    margin-left: 90px !important;
+}
 .wrapper {
 	background-color: #f9f9f9;
 }
+
 
 * {
 	outline: none;

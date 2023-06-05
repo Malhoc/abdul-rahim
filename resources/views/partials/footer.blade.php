@@ -82,26 +82,27 @@
 		</div><!-- .container end -->
 	</div><!-- .footer-widget end -->
     <div class="clearfix"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 social-icons">
-                    <a href="#" class="facebook" title="Facebook">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="#" class="twitter" title="twitter">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#" class="youtube" title="youtube">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                    <a href="#"  class="instagram" title="instagram">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="#"  class="instagram" title="whatsapp">
-                        <i class="fa fa-whatsapp"></i>
-                    </a>
+        <div class="footer--widget-content">
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 social-icons iconStyle">
+                        <a href="#" class="facebook iconStyle" title="Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="twitter" title="twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="youtube" title="youtube">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                        <a href="#"  class="instagram" title="instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#"  class="instagram" title="whatsapp">
+                            <i class="fa fa-whatsapp"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
+
         </div>
 
 

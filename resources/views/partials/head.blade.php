@@ -34,5 +34,46 @@
 
     <!-- Document Title
         ============================================= -->
-    <title>league | Multi-purpose Business Html5 Template</title>
+    <title>Hadees</title>
+    <style>
+        video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all 1.2s linear;
+    z-index: -10;
+
+}
+
+.video1{
+    opacity: 1;
+}
+.video2{
+    opacity: 0;
+}
+.video3{
+    opacity: 0;
+}
+.sliderContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0 0 0 0.5);
+}
+.text{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: #fff;
+    letter-spacing: 6px;
+    width: 100%;
+
+}
+.sliderh1{
+    margin-bottom: 15px;
+}
+    </style>
     </head>
