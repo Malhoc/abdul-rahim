@@ -284,41 +284,10 @@
 
   <!-- Contact
 ============================================= -->
-  <section id="contact" class="contact pb-0 pt-0">
-    <div class="container-fluid pr-0 pl-0">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 pr-0 pl-0">
-          <div id="googleMap" style="width: 100%; height: 498px"></div>
-        </div>
-      </div>
-    </div>
-    <script src="{{asset('assets')}}/js/jquery-2.2.4.min.js"></script>
-    <script
-      type="text/javascript"
-      src="http://maps.google.com/maps/api/js?sensor=true&amp;key=AIzaSyC2MxjDzu1HAAtpULkuqricX8hs1WB4OV4"
-    ></script>
-    <script
-      type="text/javascript"
-      src="{{asset('assets')}}/js/plugins/jquery.gmap.min.js"
-    ></script>
-    <script type="text/javascript">
-      $("#googleMap").gMap({
-        address: "Houston, Texas, USA",
-        zoom: 20,
-        markers: [
-          {
-            address: "Houston, Texas, USA",
-            maptype: "ROADMAP",
-            icon: {
-              image: "{{asset('assets')}}/images/gmap/maker.png",
-              iconsize: [35, 35],
-              iconanchor: [17, 35],
-            },
-          },
-        ],
-      });
-    </script>
-  </section>
+  <section id="contact" >
+    <div class="row" >
+
+        <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443090.6927084161!2d-95.73095110420373!3d29.816768813507107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2s!4v1687197364960!5m2!1sen!2s" width="1500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
   <!-- #contact end -->
 </div>
 @endsection
