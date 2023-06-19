@@ -16,7 +16,7 @@
                             <ul class="list-unstyled mb-0">
                                 <li><span>Call US:</span> 002 01065370701</li>
                                 <li><span>Email US:</span> ayman@zytheme.com</li>
-                                <li><span>Location:</span> Houston Texas</li>
+                                <li><span>Address:</span> Houston Texas</li>
                             </ul>
                         </div>
                     </div><!-- .col-md-3 end -->
