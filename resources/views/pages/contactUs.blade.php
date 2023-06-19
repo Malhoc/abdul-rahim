@@ -295,7 +295,7 @@
     <script src="{{asset('assets')}}/js/jquery-2.2.4.min.js"></script>
     <script
       type="text/javascript"
-      src="http://maps.google.com/maps/api/js?sensor=true&amp;key=AIzaSyC2MxjDzu1HAAtpULkuqricX8hs1WB4OV4--NFA"
+      src="http://maps.google.com/maps/api/js?sensor=true&amp;key=AIzaSyC2MxjDzu1HAAtpULkuqricX8hs1WB4OV4"
     ></script>
     <script
       type="text/javascript"
