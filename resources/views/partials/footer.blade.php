@@ -40,7 +40,7 @@
                                 </li>
                                 <li>
                                     <a class="easy-detail" href="#" title="paypal" target="blank">
-                                        <img class="easypaisa" src="{{ asset('storage')}}/images/easypaisa-app.svg">
+                                        <img class="easypaisa" src="{{asset('assets')}}/images/logo/easypaisa-app.svg">
 
                                         0302-1456789
                                     </a>
