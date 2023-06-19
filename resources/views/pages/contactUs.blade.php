@@ -310,7 +310,7 @@
             address: "Houston, Texas, USA",
             maptype: "ROADMAP",
             icon: {
-              image: {{asset('assets')}}"/images/gmap/maker.png",
+              image: "{{asset('assets')}}/images/gmap/maker.png",
               iconsize: [35, 35],
               iconanchor: [17, 35],
             },
