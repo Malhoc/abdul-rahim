@@ -7,14 +7,14 @@
     <div class="page-wrapper">
 
         @include('partials.loader')
-        <div id="wrapper" > 
+
             @include('partials.header')
 
             @yield('content')
 
             @include('partials.footer')
 
-        </div>
+       
 
 
     </div>

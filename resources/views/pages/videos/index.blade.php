@@ -1,10 +1,9 @@
 @extends('layouts.master')
 
 @section('content')
-    <!-- Page Title #5
-                    ===
-                    ===
-                    === === === === === === === === === === === === === -->
+
+<div id="wrapper" class="wrapper clearfix">
+
     <section id="page-title" class="page-title bg-overlay bg-overlay-dark3">
         <div class="bg-section">
             <img src="{{ asset('assets') }}/images/page-title/title-6.jpg" alt="Background" />
@@ -32,11 +31,6 @@
         </div>
         <!-- .container end -->
     </section> <!-- #page-title end -->
-    <!-- Blog Grid
-                ===
-                ===
-                === === === === === === === === === === === === === -->
-
     <section id="blog" class="blog blog-grid">
         <div class="container">
 
@@ -124,5 +118,11 @@
         </div>
         <!-- .container end -->
     </section>
+</div>
+<!-- Page Title #5
+                    ===
+                    ===
+                    === === === === === === === === === === === === === -->
+
     <!-- #blog end -->
 @endsection

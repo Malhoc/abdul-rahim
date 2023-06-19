@@ -1,8 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <!-- Page Title #8
-            ============================================= -->
+<div id="wrapper" class="wrapper clearfix">
     <section id="page-title" class="page-title bg-overlay bg-overlay-gradient2">
         <div class="bg-section">
             <img src="assets/images/page-title/title-6.jpg" alt="Background" />
@@ -22,9 +21,7 @@
             </div><!-- .row end -->
         </div><!-- .container end -->
     </section><!-- #page-title end -->
-    <!-- Blog Single Right Sidebar
-    ===
-    === === === === === === === === === === === === === === -->
+
     <section id="blog" class="blog blog-single">
         <div class="container">
             <div class="row">
@@ -35,7 +32,7 @@
                             <div style="width:870; height:562; box-sizing:border-box;">
 
                             </div>
-                                <video controls src="{{ asset('storage') }}/{{$video->video}}" width="100%" >
+                            <video controls src="{{ asset('storage') }}/{{ $video->video }}" width="100%">
 
                         </div>
                         <div class="entry--content">
@@ -44,15 +41,15 @@
                             </div>
                             <div class="entry--meta">
                                 <span>Oct 25, 2016</span> |
-                                <span>Author: {{$video->author_name}}</span>
-                                | <span>Book Name: {{$video->book}}</span>
+                                <span>Author: {{ $video->author_name }}</span>
+                                | <span>Book Name: {{ $video->book }}</span>
                             </div>
                             <div class="entry--title">
-                                <h4><a>{{$video->title}}</a></h4>
+                                <h4><a>{{ $video->title }}</a></h4>
                             </div>
                             <div class="entry--bio">
                                 <p>
-                                    {{$video->description}}
+                                    {{ $video->description }}
                                 </p>
 
                             </div>
@@ -113,9 +110,9 @@
                 <!-- .col-md-9 end -->
                 <div class="col-xs-12 col-sm-12 col-md-3">
                     <!-- Search
-    ===
-    ===
-    === === === === === === === === === === === === === -->
+        ===
+        ===
+        === === === === === === === === === === === === === -->
                     <div class="widget widget-search">
                         <div class="widget--content">
                             <form class="form-search">
@@ -132,19 +129,19 @@
                     </div> <!-- .widget-search end -->
 
                     <!-- Categories
-    ===
-    ===
-    === === === === === === === === === === === === === -->
+        ===
+        ===
+        === === === === === === === === === === === === === -->
                     <div class="widget widget-categories">
                         <div class="widget--title">
                             <h5>categories</h5>
                         </div>
                         <div class="widget--content">
                             <ul class="list-unstyled">
-                                @foreach ( $categories as $category)
-                                <li>
-                                    <a href="#">{{$category->name}}<span>(20)</span></a>
-                                </li>
+                                @foreach ($categories as $category)
+                                    <li>
+                                        <a href="#">{{ $category->name }}<span>(20)</span></a>
+                                    </li>
                                 @endforeach
 
 
@@ -158,4 +155,6 @@
         </div>
         <!-- .container end -->
     </section> <!-- #blog end -->
+</div>
+
 @endsection

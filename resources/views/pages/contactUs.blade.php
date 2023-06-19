@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
+<div id="wrapper" class="wrapper clearfix">
+
     <!-- Page Title #1
         ============================================= -->
     <section id="page-title" class="page-title">
@@ -108,4 +110,5 @@
         </div>
     </section>
     <!-- #contact1 end -->
+</div>
 @endsection

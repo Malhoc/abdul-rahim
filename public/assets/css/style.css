@@ -103,6 +103,7 @@ body {
 	line-height: 1.5;
 	margin: 0;
 }
+/* Custom Styling Starts Here */
 .bankDetail{
 
     font-size: 17px !important;
@@ -113,6 +114,26 @@ body {
 .iconStyle{
     margin-left: 90px !important;
 }
+.social-icon{
+    color: #337ab7 !important ;
+
+}
+.fa-paypal{
+    font-size: 25px !important;
+}
+.pay-detail{
+    font-size: 18px;
+}
+.easy-detail{
+    font-size: 15px;
+}
+.easypaisa{
+    width: 90px;
+    height: 50px;
+
+    /* background-color: white; */
+}
+/* Custom styling ends here */
 .wrapper {
 	background-color: #f9f9f9;
 }
