@@ -194,8 +194,7 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="contact--info">
                 <h3>Our Phone</h3>
-                <p>Office Telephone : 002 01065370701</p>
-                <p>Mobile : 002 01065370701</p>
+                <p>1-832-800-8177</p>
               </div>
             </div>
             <!-- .col-md-6 end -->
@@ -205,16 +204,14 @@
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="contact--info">
                 <h3>Our Email</h3>
-                <p>Main Email : ayman@zytheme.com</p>
-                <p>Inquiries : Info@zytheme.com</p>
+                <p>islamtodayhadees@gmail.com</p>
               </div>
             </div>
             <!-- .col-md-6 end -->
             <div class="col-xs-12 col-sm-6 col-md-6">
               <div class="contact--info">
                 <h3>Our Support</h3>
-                <p>Support : ayman@zytheme.com</p>
-                <p>Sales : Sales@zytheme.com</p>
+                <p>islamtodayhadees@gmail.com</p>
               </div>
             </div>
             <!-- .col-md-6 end -->

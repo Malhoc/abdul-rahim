@@ -14,9 +14,9 @@
                             <p>Our brand promise is simple: to provide powerful digital marketing solutions to small
                                 businesses that are looking to build success online.</p>
                             <ul class="list-unstyled mb-0">
-                                <li><span>Call US:</span> 002 01065370701</li>
-                                <li><span>Email US:</span> ayman@zytheme.com</li>
-                                <li><span>Address:</span> Houston Texas</li>
+                                <li><span>Call US:</span> 1-832-800-8177</li>
+                                <li><span>Email US:</span> islamtodayhadees@gmail.com</li>
+                                <li><span>Address:</span> Houston, Texas, USA</li>
                             </ul>
                         </div>
                     </div><!-- .col-md-3 end -->
@@ -27,7 +27,7 @@
                         <div class="footer--widget-content">
                             <ul class="list-unstyled mb-0 bankDetail">
                                 {{-- <li class="bankItem"><span style="color:#1bb580">Bank Name:</span> 002 01065370701</li>
-                                <li><span style="color:#1bb580">Account Title:</span> ayman@zytheme.com</li>
+                                <li><span style="color:#1bb580">Account Title:</span> islamtodayhadees@gmail.com</li>
                                 <li><span style="color:#1bb580">Account No:</span> 002 01065370701</li>
                                 <li><span style="color:#1bb580">IBAN:</span> 002 01065370701</li> --}}
 
@@ -115,12 +115,12 @@
                     <a href="https://youtu.be/yG6Jrtx3X-8" class="youtube" title="youtube" target="blank">
                         <i class="fa fa-youtube"></i>
                     </a>
-                    <a href="islamtodayhadeeschannel" class="instagram" title="instagram" target="blank">
+                    {{-- <a href="islamtodayhadeeschannel" class="instagram" title="instagram" target="blank">
                         <i class="fa fa-instagram"></i>
                     </a>
                     <a href="#" class="instagram" title="whatsapp">
                         <i class="fa fa-whatsapp"></i>
-                    </a>
+                    </a> --}}
                 </div>
             </div>
 
@@ -139,23 +139,21 @@
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <div class="footer--links">
                             <ul class="list-inline mb-0">
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="{{route('about-us')}}">About</a></li>
+                                <li><a href="{{route('blogs.index')}}">Blog</a></li>
+                                <li><a href="{{route('contact-us')}}">Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-1 col-md-4">
                         <div class="footer--logo text--center">
-                            <img src="assets/images/logo/logo-footer.png" alt="logo">
+                            <img src="{{asset('assets')}}/images/logo/hadees.jpg" width="70px" height="70px" alt="logo">
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-4">
                         <div class="footer--copyright text-right">
-                            <span>&copy; 2017 League, With Love by</span> <a
-                                href="http://themeforest.net/user/7oroof/portfolio?ref=zytheme">7oroof.com</a>
+                            <span>&copy; 2023, Islam Today</span>
+                            {{-- <a href="http://themeforest.net/user/7oroof/portfolio?ref=zytheme">7oroof.com</a> --}}
                         </div>
                     </div>
 
