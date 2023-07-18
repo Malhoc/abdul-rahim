@@ -3,10 +3,10 @@
 <section id="portfolio" class="portfolio portfolio-4col pt-0 pb-0 bg-white">
     <div class=" pr-0 pl-0" >
         <div id="portfolio-all" class="row-no-padding" >
-            <div class="carousel portfolio--slider border"  data-slide="1" data-slide-rs="1" data-autoplay="true"
+            <div class="carousel portfolio--slider "  data-slide="1" data-slide-rs="1" data-autoplay="true"
                 data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="800">
                 <!-- Portfolio #1 -->
-                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item border">
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item ">
                     <div class="portfolio--img">
                         <video autoplay muted id="video1">
                             <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
@@ -19,7 +19,7 @@
                 <!-- Portfolio #2 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <video autoplay >
+                        <video autoplay muted>
                             <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4">
                         </video>
                         {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" autoplay ></video> --}}
@@ -1509,26 +1509,26 @@
             localStorage.setItem('hasVisited', 'true');
         });
 
-        var video1 = document.getElementById('video1');
-        var video2 = document.getElementById('video2');
-        var video3 = document.getElementById('video3');
+        // var video1 = document.getElementById('video1');
+        // var video2 = document.getElementById('video2');
+        // var video3 = document.getElementById('video3');
 
-        video1.onended = function() {
-            video2.play();
-            video1.style.opacity = 0;
-            video2.style.opacity = 1;
-        }
+        // video1.onended = function() {
+        //     video2.play();
+        //     video1.style.opacity = 0;
+        //     video2.style.opacity = 1;
+        // }
 
-        video2.onended = function() {
-            video3.play();
-            video2.style.opacity = 0;
-            video3.style.opacity = 1;
-        }
-        video3.onended = function() {
-            video1.play();
-            video3.style.opacity = 0;
-            video1.style.opacity = 1;
-        }
+        // video2.onended = function() {
+        //     video3.play();
+        //     video2.style.opacity = 0;
+        //     video3.style.opacity = 1;
+        // }
+        // video3.onended = function() {
+        //     video1.play();
+        //     video3.style.opacity = 0;
+        //     video1.style.opacity = 1;
+        // }
     </script>
 @endsection
 {{-- @section('custom-script')
