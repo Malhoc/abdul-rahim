@@ -20,7 +20,7 @@
                         <span>Don’t miss to follow us</span>
                         <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
                         <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
-                        <a class="youtube" href="#"><i class="fa fa-youtube"></i></a>
+                        <a class="youtube" href="https://www.youtube.com/watch?v=yG6Jrtx3X-8"><i class="fa fa-youtube"></i></a>
                     </div><!-- .col-md-6 end -->
                 </div>
             </div>

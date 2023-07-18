@@ -12,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes(['register' => false]);
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 Route::get('/', function () {
     return view('pages.home');
@@ -43,7 +47,7 @@ Route::prefix('blogs')->name('blogs.')->group(function () {
 
 //-------------ADMIN PANEL-------------
 
-Route::prefix('admin')->name('admin.')->group(function () {
+Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
 
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
@@ -78,3 +82,4 @@ Route::prefix('admin')->name('admin.')->group(function () {
     //         Route::delete('/{tour:id}', [App\Http\Controllers\Admin\BlogController::class, 'destroy'])->name('destroy');
     // });
 });
+

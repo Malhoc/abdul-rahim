@@ -1,26 +1,50 @@
 @extends('layouts.master')
 @section('content')
+<section id="portfolio" class="portfolio portfolio-4col pt-0 pb-0 bg-white">
+    <div class=" pr-0 pl-0" >
+        <div id="portfolio-all" class="row-no-padding" >
+            <div class="carousel portfolio--slider border"  data-slide="1" data-slide-rs="1" data-autoplay="true"
+                data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="800">
+                <!-- Portfolio #1 -->
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item border">
+                    <div class="portfolio--img">
+                        <video autoplay muted id="video1">
+                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
+                        </video>
+                        {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4" autoplay ></video> --}}
+
+                    </div><!-- .Portfolio-img end -->
+                </div><!-- . portfolio-item end -->
+
+                <!-- Portfolio #2 -->
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
+                    <div class="portfolio--img">
+                        <video autoplay >
+                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4">
+                        </video>
+                        {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" autoplay ></video> --}}
+
+                    </div><!-- .Portfolio-img end -->
+                </div><!-- . portfolio-item end -->
+
+                <!-- Portfolio #3 -->
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
+                    <div class="portfolio--img">
+                        <video autoplay muted id="video1">
+                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/motorway.mp4">
+                        </video>
+                        {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/motorway.mp4" autoplay ></video> --}}
+                    </div><!-- .Portfolio-img end -->
+                </div><!-- . portfolio-item end -->
+
+            </div>
+
+        </div><!-- .row end -->
+    </div><!-- .container end -->
+</section>
     <!-- Hero Section
                                 ====================================== -->
-    <div class=" sliderContainer">
-        <video autoplay muted id="video1" class="video1">
-            <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
-        </video>
 
-        <video muted id="video2" class="video2">
-            <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" type="video/mp4">
-        </video>
-
-        <video muted id="video3" class="video3">
-            <source src="{{ asset('assets') }}/images/sliders/slide-bg/motorway.mp4" type="video/mp4">
-        </video>
-
-        <div class="text">
-            <h1 class="sliderh1"></h1>
-            <p></p>
-        </div>
-
-    </div>
     <!-- #hero end -->
     {{-- Ummah's Feature Start --}}
 

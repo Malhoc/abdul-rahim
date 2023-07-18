@@ -112,7 +112,7 @@
         </li> --}}
 
 
-        {{-- <li>
+        <li>
             <a href="#" onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">
                 <i class="fa fa-sign-out"></i> {{ __('Logout') }}
@@ -120,12 +120,12 @@
             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                 @csrf
             </form>
-        </li> --}}
-        <li>
+        </li>
+        {{-- <li>
             <a class="right-sidebar-toggle">
                 <i class="fa fa-tasks"></i>
             </a>
-        </li>
+        </li> --}}
     </ul>
 
 </nav>
