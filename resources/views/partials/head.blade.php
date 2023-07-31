@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="noindex, nofollow"/>
+    <title>Hadees</title>
+
     <!--IE Compatibility Meta-->
     <meta name="author" content="zytheme"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Multi-purpose Business html5 template">
-    <link href="assets/images/favicon/favicon.png" rel="icon">
+    <link href="{{asset('assets')}}/images/favicon/favicon.png" rel="icon">
 
     <!-- Fonts
         ============================================= -->
@@ -16,9 +18,9 @@
 
     <!-- Stylesheets
         ============================================= -->
-    <link href="{{asset('assets')}}/css/external.css" rel="stylesheet">
-    <link href="{{asset('assets')}}/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{asset('assets')}}/css/style.css" rel="stylesheet">
+    <link type="text/css" href="{{asset('assets')}}/css/external.css" rel="stylesheet">
+    <link type="text/css" href="{{asset('assets')}}/css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="{{asset('assets')}}/css/style.css" rel="stylesheet">
     {{-- <link href="{{asset('assets')}}/css/plugins/summernote/summernote.css" rel="stylesheet">
     <link href="{{asset('assets')}}/css/plugins/summernote/summernote-bs3.css" rel="stylesheet"> --}}
     <!-- RS5.0 Main Stylesheet -->
@@ -32,11 +34,4 @@
           <script src="assets/js/respond.min.js"></script>
         <![endif]-->
 
-    <!-- Document Title
-        ============================================= -->
-    <title>Hadees</title>
-    <style>
-
-
-    </style>
     </head>
