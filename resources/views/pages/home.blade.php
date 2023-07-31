@@ -8,8 +8,8 @@
                 <!-- Portfolio #1 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item ">
                     <div class="portfolio--img">
-                        <video autoplay muted id="video1">
-                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
+                        <video autoplay  id="video1">
+                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/WhatsApp.mp4">
                         </video>
                         {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4" autoplay ></video> --}}
 
@@ -19,8 +19,8 @@
                 <!-- Portfolio #2 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <video autoplay muted>
-                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4">
+                        <video autoplay>
+                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" type="video/mp4">
                         </video>
                         {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" autoplay ></video> --}}
 

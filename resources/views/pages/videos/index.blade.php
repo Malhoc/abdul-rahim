@@ -33,8 +33,43 @@
     </section> <!-- #page-title end -->
     <section id="blog" class="blog blog-grid">
         <div class="container">
+            <div class="col-md-12 col-xs-12 col-sm-12 mb-30-xs mb-30-sm">
+				<div class="cart-shiping">
+					<h6>Calculate Shipping :</h6>
+					<div class="row">
+					<form>
+                        <div class="col-md-12">
+							<input type="text" class="form-control" id="postal-code" placeholder="Postal Code / ZIP">
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<i class="fa fa-angle-down"></i>
+							<select class="form-control">
+								<option value="All" disabled selected>Select by Author</option>
+								<option value="USA">USA</option>
+								<option value="AFG">Afghanistan</option>
+								<option value="ALA">Åland Islands</option>
+							</select>
+						</div>
+						<div class="col-xs-12 col-md-4">
+							<i class="fa fa-angle-down"></i>
+							<select class="form-control">
+								<option value="All" disabled selected>Select by Book</option>
+								<option value="al">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="CA">California</option>
+							</select>
+						</div>
 
-                <div class="widget widget-search">
+						<div class="col-md-4">
+							<button type="submit" class="btn btn--primary pull-right pull-none-xs">update total</button>
+						</div>
+					</form>
+					</div>
+				</div><!-- .cart-shiping end -->
+			</div>
+                {{-- <div class="widget widget-search">
                     <div class="widget--content">
                         <form class="form-search" action="{{route('videos.search')}}" method="post">
                             @csrf
@@ -45,11 +80,10 @@
                                 </span>
 
                             </div>
-                            <!-- /input-group -->
-                        </form>
+
 
                     </div>
-                </div> <!-- .widget-search end -->
+                </div>  --}}
 
             <div class="row">
 
