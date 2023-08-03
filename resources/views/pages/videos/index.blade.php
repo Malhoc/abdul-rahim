@@ -37,9 +37,10 @@
 				<div class="cart-shiping">
 
 					<div class="row">
-					<form>
+					<form action="{{route('videos.search')}}" method="GET">
+                        @csrf
                         <div class="col-md-12">
-							<input type="text" class="form-control" id="postal-code" placeholder="Type here...">
+							<input type="text" name="keyword" class="form-control" id="postal-code" placeholder="Type here...">
 						</div>
 						<div class="col-xs-12 col-md-4">
 							<i class="fa fa-angle-down"></i>
