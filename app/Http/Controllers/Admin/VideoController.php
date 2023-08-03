@@ -67,12 +67,14 @@ class VideoController extends Controller
             'video' => $videoPath,
             'slug' => Str::slug($request->title),
         ]);
-        
+
 
         if($video){
-            $newsletter = Subscribe::all();
-            foreach ($newsletter as $key => $row) {
-                Mail::to($row->email)->send(new VideoCreated());
+            if(config('app.env') == 'production'){
+                $newsletter = Subscribe::all();
+                foreach ($newsletter as $key => $row) {
+                    Mail::to($row->email)->send(new VideoCreated());
+                }
             }
         }
         return redirect()->route('admin.videos.index');
