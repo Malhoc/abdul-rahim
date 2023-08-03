@@ -9,7 +9,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item ">
                     <div class="portfolio--img">
                         <video autoplay  id="video1">
-                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/WhatsApp.mp4">
+                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
                         </video>
                         {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4" autoplay ></video> --}}
 
