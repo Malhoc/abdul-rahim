@@ -35,11 +35,11 @@
         <div class="container">
             <div class="col-md-12 col-xs-12 col-sm-12 mb-30-xs mb-30-sm">
 				<div class="cart-shiping">
-					<h6>Calculate Shipping :</h6>
+
 					<div class="row">
 					<form>
                         <div class="col-md-12">
-							<input type="text" class="form-control" id="postal-code" placeholder="Postal Code / ZIP">
+							<input type="text" class="form-control" id="postal-code" placeholder="Type here...">
 						</div>
 						<div class="col-xs-12 col-md-4">
 							<i class="fa fa-angle-down"></i>
@@ -63,7 +63,7 @@
 						</div>
 
 						<div class="col-md-4">
-							<button type="submit" class="btn btn--primary pull-right pull-none-xs">update total</button>
+							<button type="submit" class="btn btn--primary pull-right pull-none-xs">Search</button>
 						</div>
 					</form>
 					</div>
