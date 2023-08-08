@@ -12,6 +12,7 @@
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.2",
+        "nassajis/laravel-resumable-upload": "^1.2",
         "pion/laravel-chunk-upload": "^1.5"
     },
     "require-dev": {

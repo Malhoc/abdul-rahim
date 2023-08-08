@@ -203,10 +203,13 @@ class VideoController extends Controller
 
       public function uploadChunk(Request $request) {
 
-        $chunk = $request->file('chunk');
+        $chunk = $request->file('file');
+        //   dd($chunk);
 
         // Store chunk somehow
-        $chunk->store('temp');
+        $chunk->store('videos', 'public');
 
       }
+
+
 }

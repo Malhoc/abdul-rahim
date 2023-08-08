@@ -25,6 +25,9 @@ Route::get('/about-us', function () {
     return view('pages.aboutUs');
 })->name('about-us');
 
+// resumable.js routes
+// Route::get ('resumable/upload', [App\Http\Controllers\UploadController::class, 'resumableUpload']);
+Route::any('resumable/upload', [App\Http\Controllers\UploadController::class, 'resumableUpload'])->name('resumable.upload');;
 
 Route::post('/subscribe', [App\Http\Controllers\SubscribeController::class, 'store'])->name('newsletter.store');
 

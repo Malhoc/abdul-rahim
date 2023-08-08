@@ -35,7 +35,7 @@
             </div>
         </div>
 
-        <div class="container pt-4">
+        {{-- <div class="container pt-4">
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="wrapper wrapper-content ">
 
@@ -211,9 +211,9 @@
             fileType: ['mp4'],
             chunkSize: 10 * 1024 *
             1024, // default is 1*1024*1024, this should be less than your maximum limit in php.ini
-            headers: {
-                'Accept': 'application/json'
-            },
+            // headers: {
+            //     'Accept': 'application/json'
+            // },
             testChunks: false,
             throttleProgressCallbacks: 1,
         });
@@ -221,6 +221,8 @@
         resumable.assignBrowse(browseFile[0]);
 
         resumable.on('fileAdded', function(file) { // trigger when file picked
+
+            console.log(file);
             showProgress();
             resumable.upload() // to actually start uploading.
         });
@@ -258,6 +260,7 @@
         });
 
         resumable.on('fileError', function(file, response) { // trigger when there is any error
+            console.log(file);
             console.log(response);
             alert('file uploading error.')
         });
