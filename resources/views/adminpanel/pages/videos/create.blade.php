@@ -232,6 +232,7 @@
     });
 
     resumable.on('fileError', function (file, response) { // trigger when there is any error
+        console.log(response);
         alert('file uploading error.')
     });
 
