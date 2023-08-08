@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Mail\VideoCreated;
 use App\Models\Subscribe;
 use App\Models\Video;
+use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Str;
@@ -21,7 +22,7 @@ class VideoController extends Controller
     public function index()
     {
         $videos = Video::all();
-        return view('adminpanel.pages.videos.index',compact('videos'));
+        return view('adminpanel.pages.videos.index', compact('videos'));
     }
 
     /**
@@ -56,7 +57,7 @@ class VideoController extends Controller
         ]);
         $name = null;
         $videoFile = $request->file('video');
-        $videoPath = $videoFile->store('videos','public');
+        $videoPath = $videoFile->store('videos', 'public');
 
         $video = Video::create([
             'title' => $request->title,
@@ -69,8 +70,8 @@ class VideoController extends Controller
         ]);
 
 
-        if($video){
-            if(config('app.env') == 'production'){
+        if ($video) {
+            if (config('app.env') == 'production') {
                 $newsletter = Subscribe::all();
                 foreach ($newsletter as $key => $row) {
                     Mail::to($row->email)->send(new VideoCreated());
@@ -100,7 +101,6 @@ class VideoController extends Controller
     public function edit(Video $video)
     {
         return view("adminpanel.pages.videos.edit",  compact('video'));
-
     }
 
     /**
@@ -132,11 +132,10 @@ class VideoController extends Controller
 
         $name = null;
         $videoFile = $request->file('video');
-        $videoPath = $videoFile->store('videos','public');
+        $videoPath = $videoFile->store('videos', 'public');
         $video->video = $videoPath;
         $video->save();
         return redirect('admin.videos.index');
-
     }
 
     /**
@@ -149,46 +148,68 @@ class VideoController extends Controller
     {
         $video = Video::find($id);
 
-        if($video){
+        if ($video) {
             $video->delete();
-            return redirect()->back()->with(['success'=>'Successfully deleted!']);
+            return redirect()->back()->with(['success' => 'Successfully deleted!']);
         } else {
-            return redirect()->back()->with(['error'=>'Record does not exist!']);
+            return redirect()->back()->with(['error' => 'Record does not exist!']);
         }
-
-
     }
 
-    public function uploadLargeFiles(Request $request) {
-        $receiver = new FileReceiver('file', $request, HandlerFactory::classFromRequest($request));
+    // public function uploadLargeFiles(Request $request)
+    // {
+    //     $receiver = new FileReceiver('file', $request, HandlerFactory::classFromRequest($request));
 
-        if (!$receiver->isUploaded()) {
-            // file not uploaded
+    //     if (!$receiver->isUploaded()) {
+    //         // file not uploaded
+    //     }
+
+    //     $fileReceived = $receiver->receive(); // receive file
+    //     if ($fileReceived->isFinished()) { // file uploading is complete / all chunks are uploaded
+    //         $file = $fileReceived->getFile(); // get file
+    //         $extension = $file->getClientOriginalExtension();
+    //         $fileName = str_replace('.' . $extension, '', $file->getClientOriginalName()); //file name without extenstion
+    //         $fileName .= '_' . md5(time()) . '.' . $extension; // a unique file name
+
+    //         $disk = Storage::disk(config('filesystems.default'));
+    //         $path = $disk->putFileAs('videos', $file, $fileName);
+
+    //         // delete chunked file
+    //         unlink($file->getPathname());
+    //         return [
+    //             'path' => asset('storage/' . $path),
+    //             'filename' => $fileName
+    //         ];
+    //     }
+
+    //     // otherwise return percentage information
+    //     $handler = $fileReceived->handler();
+    //     return [
+    //         'done' => $handler->getPercentageDone(),
+    //         'status' => true
+    //     ];
+    // }
+
+    public function uploadLargeFiles(FileReceiver $receiver)
+    {
+        // check if the upload is success, throw exception or return response you need
+        if ($receiver->isUploaded() === false) {
+            throw new Exception();
+        }
+        // receive the file
+        $save = $receiver->receive();
+
+        // check if the upload has finished (in chunk mode it will send smaller files)
+        if ($save->isFinished()) {
+            // save the file and return any response you need
+            return $this->saveFile($save->getFile());
         }
 
-        $fileReceived = $receiver->receive(); // receive file
-        if ($fileReceived->isFinished()) { // file uploading is complete / all chunks are uploaded
-            $file = $fileReceived->getFile(); // get file
-            $extension = $file->getClientOriginalExtension();
-            $fileName = str_replace('.'.$extension, '', $file->getClientOriginalName()); //file name without extenstion
-            $fileName .= '_' . md5(time()) . '.' . $extension; // a unique file name
-
-            $disk = Storage::disk(config('filesystems.default'));
-            $path = $disk->putFileAs('videos', $file, $fileName);
-
-            // delete chunked file
-            unlink($file->getPathname());
-            return [
-                'path' => asset('storage/' . $path),
-                'filename' => $fileName
-            ];
-        }
-
-        // otherwise return percentage information
-        $handler = $fileReceived->handler();
-        return [
-            'done' => $handler->getPercentageDone(),
-            'status' => true
-        ];
+        // we are in chunk mode, lets send the current progress
+        /** @var AbstractHandler $handler */
+        $handler = $save->handler();
+        return response()->json([
+            "done" => $handler->getPercentageDone()
+        ]);
     }
 }
