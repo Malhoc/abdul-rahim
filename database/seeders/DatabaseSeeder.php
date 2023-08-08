@@ -17,8 +17,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Storage::makeDirectory('public/videos');
-        Storage::makeDirectory('public/blogs');
+        // Storage::makeDirectory('public/videos');
+        // Storage::makeDirectory('public/blogs');
 
         User::create([
             'name' => 'Super Admin',

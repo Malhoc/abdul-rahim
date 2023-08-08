@@ -4,7 +4,7 @@
 
 <div id="wrapper" class="wrapper clearfix">
 
-    <section id="page-title" class="page-title bg-overlay bg-overlay-dark3">
+    {{-- <section id="page-title" class="page-title bg-overlay bg-overlay-dark3">
         <div class="bg-section">
             <img src="{{ asset('assets') }}/images/page-title/title-6.jpg" alt="Background" />
         </div>
@@ -30,10 +30,10 @@
             <!-- .row end -->
         </div>
         <!-- .container end -->
-    </section> <!-- #page-title end -->
-    <section id="blog" class="blog blog-grid">
-        <div class="container">
-            <div class="col-md-12 col-xs-12 col-sm-12 mb-30-xs mb-30-sm">
+    </section> <!-- #page-title end --> --}}
+    <section id="blog" class="blog blog-grid" >
+        <div class="container" >
+            <div class="col-md-12 col-xs-12 col-sm-12 mb-30-xs mb-30-sm" style="margin-bottom: 2rem">
 				<div class="cart-shiping">
 
 					<div class="row">
@@ -86,7 +86,7 @@
                     </div>
                 </div>  --}}
 
-            <div class="row">
+            <div class="row mt-5">
 
                 @foreach ($videos as $video)
                     <div class="col-xs-12 col-sm-6 col-md-4">

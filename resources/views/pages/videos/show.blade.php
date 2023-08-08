@@ -2,7 +2,7 @@
 
 @section('content')
 <div id="wrapper" class="wrapper clearfix">
-    <section id="page-title" class="page-title bg-overlay bg-overlay-gradient2">
+    {{-- <section id="page-title" class="page-title bg-overlay bg-overlay-gradient2">
         <div class="bg-section">
             <img src="assets/images/page-title/title-6.jpg" alt="Background" />
         </div>
@@ -20,7 +20,7 @@
                 </div><!-- .col-md-12 end -->
             </div><!-- .row end -->
         </div><!-- .container end -->
-    </section><!-- #page-title end -->
+    </section><!-- #page-title end --> --}}
 
     <section id="blog" class="blog blog-single">
         <div class="container">
