@@ -60,6 +60,8 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
         Route::put('/{id}/update', [App\Http\Controllers\Admin\VideoController::class, 'update'])->name('update');
         Route::get('/{id}', [App\Http\Controllers\Admin\VideoController::class, 'destroy'])->name('destroy');
         Route::post('/asdasdsdasdsadas', [App\Http\Controllers\Admin\VideoController::class, 'uploadLargeFiles'])->name('files.upload.large');
+        Route::post('/complete-upload', [App\Http\Controllers\Admin\VideoController::class, 'completeUpload'])->name('complete-upload');
+        Route::post('/upload-chunk', [App\Http\Controllers\Admin\VideoController::class, 'uploadChunk'])->name('upload-chunk');
     });
 
 //---BLOGS Routes---//
