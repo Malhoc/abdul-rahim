@@ -90,7 +90,7 @@
 
                                                         <a href="{{ route('admin.videos.edit', $video->id ) }}"
                                                             class="btn-white btn btn-xs">Edit</a>
-                                                        <a href='{{route('admin.videos.destroy', 200)}}'
+                                                        <a href='{{route('admin.videos.destroy', $video->id)}}'
                                                             class='btn-white btn btn-xs'>Delete</a>
                                                         {{-- <button onclick="deleteRecord({{ route('admin.videos.destroy', $video->id )}})"
                                                             class="btn-white btn btn-xs">Delete</button> --}}
