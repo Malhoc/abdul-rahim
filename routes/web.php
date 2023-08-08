@@ -59,7 +59,7 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
         Route::get('/{video}/edit', [App\Http\Controllers\Admin\VideoController::class, 'edit'])->name('edit');
         Route::put('/{id}/update', [App\Http\Controllers\Admin\VideoController::class, 'update'])->name('update');
         Route::get('/{id}', [App\Http\Controllers\Admin\VideoController::class, 'destroy'])->name('destroy');
-        Route::post('/asdasdsdasdsadas', [App\Http\Controllers\Admin\VideoController::class, 'destroy'])->name('files.upload.large');
+        Route::post('/asdasdsdasdsadas', [App\Http\Controllers\Admin\VideoController::class, 'uploadLargeFiles'])->name('files.upload.large');
     });
 
 //---BLOGS Routes---//
