@@ -98,25 +98,25 @@
 
                             </div>
                             <div class="entry--content">
-                                <div class="entry--format">
+                                {{-- <div class="entry--format">
                                     <i class="fa fa-image"></i>
                                 </div>
                                 <div class="entry--meta">
                                     <span><a href="#">Business</a></span>
-                                </div>
+                                </div> --}}
                                 <div class="entry--title">
-                                    <h4><a href="#">{{ $video->title }}</a></h4>
+                                    <h4><a href="{{ route('videos.show', $video->id) }}">{{ $video->title }}</a></h4>
                                 </div>
-                                <div class="entry--bio">
+                                {{-- <div class="entry--bio">
                                     {{ $video->description }}
-                                </div>
+                                </div> --}}
                                 <div class="entry--footer">
-                                    <div class="entry--date">
+                                    {{-- <div class="entry--date">
                                         Feb 22, 2017
-                                    </div>
+                                    </div> --}}
                                     <div class="entry--more">
                                         <a href="{{ route('videos.show', $video->id) }}"><i
-                                                class="fa fa-long-arrow-right"></i><span>more</span></a>
+                                                class="fa fa-long-arrow-right"></i><span>Watch Video</span></a>
                                     </div>
                                 </div>
                             </div>

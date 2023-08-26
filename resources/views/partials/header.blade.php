@@ -51,19 +51,19 @@
                     <ul class="nav navbar-nav nav-pos-right nav-bordered-right snavbar-left">
 
                         <!-- Home Menu -->
-                        <li class="active">
+                        <li class="@if (request()->is('index*')) {{ 'active' }} @else {{ '' }} @endif">
                             <a href="{{ route('index') }}" class="dropdown-toggle menu-item">Home</a>
                         </li>
-                        <li >
+                        <li class="@if (request()->is('videos*')) {{ 'active' }} @else {{ '' }} @endif">
                             <a href="{{ route('videos.index') }}" class="dropdown-toggle menu-item">Videos</a>
                         </li>
-                        <li class="has-dropdown">
+                        <li class="has-dropdown @if (request()->is('blogs*')) {{ 'active' }} @else {{ '' }} @endif" >
                             <a href="{{ route('blogs.index') }}"  class="dropdown-toggle menu-item">Blog</a>
                         </li>
-                        <li >
+                        <li class="@if (request()->is('about-us*')) {{ 'active' }} @else {{ '' }} @endif" >
                             <a href="{{ route('about-us') }}"  class="dropdown-toggle menu-item">About us</a>
                         </li>
-                        <li >
+                        <li class="@if (request()->is('contact-us*')) {{ 'active' }} @else {{ '' }} @endif">
                             <a href="{{ route('contact-us') }}"  class="dropdown-toggle menu-item">Contact Us</a>
                         </li>
 
