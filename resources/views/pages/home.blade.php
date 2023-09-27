@@ -1,17 +1,14 @@
 @extends('layouts.master')
 @section('content')
-<section id="portfolio" class="portfolio portfolio-4col pt-0 pb-0 bg-white">
+<section id="portfolio" class="portfolio portfolio-4col pt-0 pb-0 bg-white" >
     <div class=" pr-0 pl-0" >
-        <div id="portfolio-all" class="row-no-padding" >
-            <div class="carousel portfolio--slider "  data-slide="1" data-slide-rs="1" data-autoplay="true"
+        <div id="portfolio-all" class="row-no-padding">
+            <div class="carousel portfolio--slider" data-slide="1" data-slide-rs="1" data-autoplay="true"
                 data-nav="true" data-dots="true" data-space="0" data-loop="true" data-speed="800">
                 <!-- Portfolio #1 -->
-                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item ">
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <video autoplay  id="video1">
-                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4">
-                        </video>
-                        {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/golden-sky.mp4" autoplay ></video> --}}
+                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (1).png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -19,10 +16,7 @@
                 <!-- Portfolio #2 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <video autoplay>
-                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" type="video/mp4">
-                        </video>
-                        {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/beach.mp4" autoplay ></video> --}}
+                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (2).png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -30,10 +24,32 @@
                 <!-- Portfolio #3 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <video autoplay muted id="video1">
-                            <source src="{{ asset('assets') }}/images/sliders/slide-bg/motorway.mp4">
-                        </video>
-                        {{-- <video src="{{ asset('assets') }}/images/sliders/slide-bg/motorway.mp4" autoplay ></video> --}}
+                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (3).png" alt="Portfolio Item">
+
+                    </div><!-- .Portfolio-img end -->
+                </div><!-- . portfolio-item end -->
+
+                <!-- Portfolio #4 -->
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
+                    <div class="portfolio--img">
+                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (4).png" alt="Portfolio Item">
+
+                    </div><!-- .Portfolio-img end -->
+                </div><!-- . portfolio-item end -->
+
+                <!-- Portfolio #5 -->
+                <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
+                    <div class="portfolio--img">
+                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (5).png" alt="Portfolio Item">
+
+                    </div><!-- .Portfolio-img end -->
+                </div><!-- . portfolio-item end -->
+
+                 <!-- Portfolio #5 -->
+                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
+                    <div class="portfolio--img">
+                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (6).png" alt="Portfolio Item">
+
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
 
@@ -41,7 +57,7 @@
 
         </div><!-- .row end -->
     </div><!-- .container end -->
-</section>
+</section><!-- #portfolio end -->
     <!-- Hero Section
                                 ====================================== -->
 

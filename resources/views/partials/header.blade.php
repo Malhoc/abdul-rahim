@@ -39,10 +39,10 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="logo" href="index-2.html">
-                        <img class="logo-light" src="{{asset('assets')}}/images/logo/hadees.jpg" alt="League Logo" width="70px"
-                            height="70px">
-                        <img class="logo-dark" src="{{asset('assets')}}/images/logo/hadees.jpg" alt="League Logo" width="70px"
-                            height="70px">
+                        <img class="logo-light" src="{{asset('assets')}}/images/logo/hadees.jpg" alt="League Logo" width="95px"
+                            height="95px">
+                        <img class="logo-dark" src="{{asset('assets')}}/images/logo/hadees.jpg" alt="League Logo" width="95px"
+                            height="95px">
                     </a>
                 </div>
 
