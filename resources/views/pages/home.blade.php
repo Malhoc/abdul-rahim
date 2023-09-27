@@ -8,7 +8,7 @@
                 <!-- Portfolio #1 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (1).png" alt="Portfolio Item">
+                        <img height="720px" src="assets/images/sliders/slide-bg/1.png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -16,7 +16,7 @@
                 <!-- Portfolio #2 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (2).png" alt="Portfolio Item">
+                        <img height="720px" src="assets/images/sliders/slide-bg/2.png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -24,7 +24,7 @@
                 <!-- Portfolio #3 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (3).png" alt="Portfolio Item">
+                        <img height="720px" src="assets/images/sliders/slide-bg/3.png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -32,7 +32,7 @@
                 <!-- Portfolio #4 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (4).png" alt="Portfolio Item">
+                        <img height="720px" src="assets/images/sliders/slide-bg/4.png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -40,7 +40,7 @@
                 <!-- Portfolio #5 -->
                 <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (5).png" alt="Portfolio Item">
+                        <img height="720px" src="assets/images/sliders/slide-bg/5.png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
@@ -48,7 +48,7 @@
                  <!-- Portfolio #5 -->
                  <div class="col-xs-12 col-sm-12 col-md-12 portfolio-item">
                     <div class="portfolio--img">
-                        <img height="720px" src="assets/images/sliders/slide-bg/بلّغنا الله وإياكم ليلة القدر وتقبل منا ومنكم صالح الأعمال (6).png" alt="Portfolio Item">
+                        <img height="720px" src="assets/images/sliders/slide-b/6.png" alt="Portfolio Item">
 
                     </div><!-- .Portfolio-img end -->
                 </div><!-- . portfolio-item end -->
