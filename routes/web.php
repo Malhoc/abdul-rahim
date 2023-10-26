@@ -51,7 +51,7 @@ Route::prefix('blogs')->name('blogs.')->group(function () {
 //-------------ADMIN PANEL-------------
 
 Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
-
+    Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
 
     //Videos
@@ -87,5 +87,6 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     //         Route::put('/{id}', [App\Http\Controllers\Admin\BlogController::class, 'update'])->name('update');
     //         Route::delete('/{tour:id}', [App\Http\Controllers\Admin\BlogController::class, 'destroy'])->name('destroy');
     // });
+    
 });
 
